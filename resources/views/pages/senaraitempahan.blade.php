@@ -261,7 +261,7 @@
                         <x-form.input label="ID Cagaran" value="" livewire=""/>
                     </div>
                     <div class=" grid gap-2 lg:grid-cols-1 sm:grid-cols-1">
-                        <label class="block text-sm font-semibold leading-5 text-gray-700">Cacatan</label>
+                        <label class="block text-sm font-semibold leading-5 text-gray-700">Catatan</label>
                         <textarea class="w-full resize-y border rounded focus:outline-none focus:shadow-outline h-24"></textarea>
                     </div>
                    <div class="flex mt-2">
