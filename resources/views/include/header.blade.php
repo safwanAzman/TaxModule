@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html :class="{ 'theme-dark': dark }" x-data="data()" lang="en">
+<html x-data="data()" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,7 +38,7 @@
 
   </head>
   <body>
-     <header class="z-10 py-4 bg-blue-500  shadow-md ">
+     <header class="z-10 py-4 bg-blue-500  shadow-md " style="height: 7vh;">
         <div class="flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300">
             <a class="ml-6 text-xl font-bold text-white" href="#"> eMPK </a>
           <!-- Mobile hamburger -->
@@ -154,7 +154,7 @@
         </div>
       </header>
     <div
-      class="flex bg-gray-50 dark:bg-gray-900"
+      class="flex bg-gray-50" style="height: 93vh;"
       :class="{ 'overflow-hidden': isSideMenuOpen }"
     >
       <!-- Desktop sidebar -->
@@ -1818,7 +1818,7 @@
       </aside>
       <div class="flex flex-col flex-1 w-full">
        
-        <main class="">
+        <main class="overflow-y-auto">
           <div class="px-2 mx-auto grid pb-10">
             {{-- content --}}
              @yield('content')
