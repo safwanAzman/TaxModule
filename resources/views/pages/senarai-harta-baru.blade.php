@@ -632,7 +632,7 @@
                  </div>
                  <div class=" grid gap-2 lg:grid-cols-1 sm:grid-cols-1">
                      <x-form.input label="Tarikh Janaan Notis" value="" livewire=""/>
-                     <label class="block text-sm font-semibold leading-5 text-gray-700">Cacatan</label>
+                     <label class="block text-sm font-semibold leading-5 text-gray-700">Catatan</label>
                     <textarea class="w-full resize-y border rounded focus:outline-none focus:shadow-outline h-32"></textarea>
                  </div>
                 <div class="pt-4 flex">
