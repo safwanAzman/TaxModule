@@ -21,10 +21,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome'
-    // function(){return redirect()->intended(route('login'));}
-)->name('home');
-
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
         ->name('login');
@@ -56,6 +52,10 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', LogoutController::class)
         ->name('logout');
 });
+
+Route::view('/', 'welcome'
+    //function(){return redirect(route('login'));}
+)->name('home');
 
 Route::get('/dashboard', function () {
     return view('pages.mainpage');
