@@ -6,6 +6,10 @@ module.exports = {
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             },
+            rotate: {
+                '30': '30deg',
+                '360': '360deg',
+            },
         },
     },
     variants: {},

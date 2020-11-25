@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>eMPK</title>
+    <title>eCouncil</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 
 
   {{--   <link rel="stylesheet" href="./assets/css/tailwind.output.css" /> --}}
 
-     <link rel="stylesheet" href="{{ asset('theme/public/assets/css/tailwind.output.css')}}" />
-     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="{{ asset('css/app.css')}}" />
+     {{-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> --}}
 
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -40,7 +40,7 @@
   <body>
      <header class="z-10 py-4 bg-blue-500  shadow-md " style="height: 7vh;">
         <div class="flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300">
-            <a class="ml-6 text-xl font-bold text-white" href="#"> eMPK </a>
+            <a class="ml-6 text-xl font-bold text-white" href="#"> eCouncil </a>
           <!-- Mobile hamburger -->
           <button
             class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
@@ -67,7 +67,7 @@
               <button class="align-middle rounded-full focus:shadow-outline-purple focus:outline-none" @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true">
                 <div class="flex text-white font-semibold">
                   <img class="object-cover w-8 h-8 rounded-full" src="https://image.flaticon.com/icons/png/512/149/149071.png" alt="" aria-hidden="true" />
-                  <p class="pt-1 pl-2">JAMAL MIRDAD</p>
+                  <p class="pt-1 pl-2">ADMIN</p>
                 </div>
               </button>
               <template x-if="isProfileMenuOpen">
@@ -80,7 +80,7 @@
                   class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:border-gray-700 dark:text-gray-300 dark:bg-gray-700"
                   aria-label="submenu"
                 >
-                  <li class="flex">
+                  {{-- <li class="flex">
                     <a
                       class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                       href="#"
@@ -124,11 +124,12 @@
                       </svg>
                       <span>Settings</span>
                     </a>
-                  </li>
+                  </li> --}}
+
                   <li class="flex">
                     <a
                       class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                      href="#"
+                      href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                     >
                       <svg
                         class="w-4 h-4 mr-3"
@@ -146,6 +147,9 @@
                       </svg>
                       <span>Log out</span>
                     </a>
+                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
                   </li>
                 </ul>
               </template>
@@ -167,12 +171,41 @@
                    <img class="hidden h-14 w-14 rounded-full sm:block object-cover mr-2 border-4 border-gray-100" src="https://image.flaticon.com/icons/png/512/149/149071.png" alt="">
                 </div>
                 <div class="pt-1">
-                    <p class="font-bold text-base font-bold text-gray-400"> JAMAL MIRDAD</p>
+                    <p class="font-bold text-base font-bold text-gray-400"> ADMIN</p>
                     <p class="text-sm text-gray-400 pt-2"><span style="height: 10px; width: 10px; background-color:#5fff14; border-radius: 50%; display: inline-block;"></span> Online</p>
                 </div>
             </div>
-          {{-- start penilaian --}}
+
           <ul class="mt-6">
+            <li class="relative px-6 py-1">
+              <span
+                class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
+                aria-hidden="true"
+              ></span>
+              <a
+                class="inline-flex items-center w-full text-sm font-semibold text-white transition-colors duration-150 hover:text-gray-100 dark:hover:text-gray-200 dark:text-gray-100"
+                href="{{route('mainpage')}}"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  ></path>
+                </svg>
+                <span class="ml-4">Halaman Utama</span>
+              </a>
+            </li>
+          </ul>
+          {{-- start penilaian --}}
+          <ul class="">
             <li class="relative px-6 py-3" x-data="{ open: false }">
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-100 dark:hover:text-gray-200"
@@ -196,7 +229,7 @@
                   <span class="ml-4">Penilaian</span>
                 </span>
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open" >
                 <ul
@@ -448,7 +481,7 @@
                   </svg>
                   <span class="ml-4">Cukai Taksiran</span>
                 </span>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open2}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open2}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open2">
                 <ul
@@ -702,7 +735,7 @@
                   </svg>
                   <span class="ml-4">Remisi </span>
                 </span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open15}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open15}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open15">
                 <ul
@@ -766,7 +799,7 @@
                   </svg>
                   <span class="ml-4">Lesen</span>
                 </span>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open3}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open3}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open3">
                 <ul
@@ -830,7 +863,7 @@
                   </svg>
                   <span class="ml-4">Sewa</span>
                 </span>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open4}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open4}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open4">
                 <ul
@@ -894,7 +927,7 @@
                   </svg>
                   <span class="ml-4">Tempahan</span>
                 </span>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open5}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open5}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open5">
                 <ul
@@ -979,7 +1012,7 @@
                   </svg>
                   <span class="ml-4">Kompaun</span>
                 </span>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open6}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open6}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open6">
                 <ul
@@ -1043,7 +1076,7 @@
                   </svg>
                   <span class="ml-4">Cagaran</span>
                 </span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open7}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open7}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open7">
                 <ul
@@ -1107,7 +1140,7 @@
                   </svg>
                   <span class="ml-4">Bil Pelbagai</span>
                 </span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open8}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open8}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open8">
                 <ul
@@ -1120,7 +1153,7 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-900 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                  {{-- <li
+                  <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-white"
                   >
                     <div class="flex">
@@ -1137,9 +1170,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 
                       </svg>
-                      <a class="w-full ml-2" href="#">Senarai Harta</a>
+                    <a class="w-full ml-2" href="{{route('Bilpelbagai.index')}}">Senarai Bil Pelbagai</a>
                     </div>
-                  </li>     --}}
+                  </li>    
                 </ul>
                 
               </div>
@@ -1171,7 +1204,7 @@
                   </svg>
                   <span class="ml-4">Kutipan</span>
                 </span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open9}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open9}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open9">
                 <ul
@@ -1235,7 +1268,7 @@
                   </svg>
                   <span class="ml-4">Pemborong</span>
                 </span>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open10}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open10}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open10">
                 <ul
@@ -1299,7 +1332,7 @@
                   </svg>
                   <span class="ml-4">Belanjawan</span>
                 </span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open11}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open11}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open11">
                 <ul
@@ -1364,7 +1397,7 @@
                   </svg>
                   <span class="ml-4">Perolehan</span>
                 </span>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open12}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open12}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open12">
                 <ul
@@ -1428,7 +1461,7 @@
                   </svg>
                   <span class="ml-4">Pembayaran</span>
                 </span>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open13}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open13}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open13">
                 <ul
@@ -1493,7 +1526,7 @@
                   </svg>
                   <span class="ml-4">Lejar Am</span>
                 </span>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-180': open14}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open14}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
               <div x-show.transition="open14">
                 <ul

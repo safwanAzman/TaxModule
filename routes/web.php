@@ -53,6 +53,7 @@ Route::middleware('auth')->group(function () {
         ->name('logout');
 });
 
+Route::middleware('auth')->group(function () {
 Route::view('/', 'welcome'
     //function(){return redirect(route('login'));}
 )->name('home');
@@ -71,3 +72,7 @@ Route::resource('SenaraiTempahan','\App\Http\Controllers\SenaraiTempahanControll
 Route::resource('SenaraiAkaun','\App\Http\Controllers\SenaraiAccountController');
 Route::resource('MaklumatAkaunSewa','\App\Http\Controllers\MaklumatAkaunController');
 Route::resource('SenaraiKutipan','\App\Http\Controllers\kutipan\SenaraiKutipanController');
+Route::resource('Bilpelbagai','\App\Http\Controllers\BilPelbagaiController');
+Route::get('DownloadResitBil','\App\Http\Controllers\BilPelbagaiController@downloadBil');
+
+});
