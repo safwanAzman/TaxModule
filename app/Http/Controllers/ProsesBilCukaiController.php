@@ -18,7 +18,7 @@ class ProsesBilCukaiController extends Controller
 
     public function downloadBilCukai()
     {
-        return response()->download(public_path('/img/bil-cukai.png'));
+        return response()->download(public_path('/img/bil-cukai.pdf'));
     }
 
     /**

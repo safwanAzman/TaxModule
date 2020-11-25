@@ -1,27 +1,89 @@
 @extends('default.default')
 @section('content')
 
-{{-- <div class="bg-white sm:rounded-lg shadow px-5 py-3 mt-3">
-    <div class="grid grid-cols-12 gap-6" x-data="{ active: 0 }">
+<div class="py-20 flex items-center justify-center">
+    <div class="grid grid-cols-12 gap-1">
         <div class="flex flex-col-reverse col-span-12 lg:col-span-12 xxl:col-span-12 lg:block">
-            <div class="bg-white shadow-sm flex">
-                <x-tab.title name="0">DOKUMEN</x-tab.title>
-                <x-tab.title name="1">PEMOHON</x-tab.title>
-                <x-tab.title name="2">SYARIKAT</x-tab.title>
-                <x-tab.title name="3">LESEN PREMIS</x-tab.title>
-                <x-tab.title name="4">LESEN IKLAN</x-tab.title>
+            <div class="grid gap-20 lg:grid-cols-4 sm:grid-cols-4">
+              
+                <!-- penilaian Batch Harta Baru -->
+                  <a href="{{route('SenaraiHartaBaru.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
+                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                      <div class="h-full w-full">
+                         <img class="h-48 w-48" src="{{ asset('img/icon/batch harta baru.png') }}">
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Senarai Harta -->
+                  <a href="{{route('SenaraiHartaCukai.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
+                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                      <div class="h-full w-full">
+                        <img class="h-48 w-48" src="{{ asset('img/icon/senarai harta.png') }}">
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Proses Bil Cukai -->
+                  <a href="{{route('ProsesBilCukai.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
+                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                      <div class="h-full w-full">
+                        <img class="h-48 w-48" src="{{ asset('img/icon/proses bil cukai.png') }}">
+                      </div>
+                    </div>
+                  </a>
+
+                   <!-- Senarai Akaun -->
+                  <a href="{{route('SenaraiAkaun.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
+                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                      <div class="h-full w-full">
+                        <img class="h-48 w-48" src="{{ asset('img/icon/senarai akaun.png') }}">
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Tempahan Gelanggang -->
+                  <a href="{{route('TempahGelanggang.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
+                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                      <div class="h-full w-full">
+                        <img class="h-48 w-48" src="{{ asset('img/icon/tempahan gelanggang.png') }}">
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <!-- Senarai Tempahan -->
+                  <a href="{{route('SenaraiTempahan.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
+                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                      <div class="h-full w-full ">
+                        <img class="h-48 w-48" src="{{ asset('img/icon/senarai tempahan.png') }}">
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Kutipan -->
+                  <a href="{{route('SenaraiKutipan.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
+                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                      <div class="h-full w-full">
+                        <img class="h-48 w-48" src="{{ asset('img/icon/kutipan.png') }}">
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Bil Pelbagai -->
+                  <a href="{{route('Bilpelbagai.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
+                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                      <div class="h-full w-full">
+                        <img class="h-48 w-48" src="{{ asset('img/icon/bil pelbagai.png') }}">
+                      </div>
+                    </div>
+                  </a>
+
+
             </div>
         </div>
-        <div class="col-span-12 lg:col-span-12 xxl:col-span-12">
-            <x-tab.content name="0">Test1</x-tab.content>
-            <x-tab.content name="1">Test2</x-tab.content>
-            <x-tab.content name="2">Test3</x-tab.content>
-            <x-tab.content name="3">Test4</x-tab.content>
-            <x-tab.content name="4">Test5</x-tab.content>
-            
-        </div>
     </div>
-</div> --}}
+</div>
 
 
 @endsection
