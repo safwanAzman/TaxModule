@@ -71,7 +71,7 @@
              <div class="bg-white shadow-lg">
                 <div class="flex items-center justify-between p-4 text-sm font-semibold text-purple-100 bg-blue-600 shadow-md focus:outline-none focus:shadow-outline-purple">
                     <div class="flex items-center">
-                        <span>Malumat Pemilik</span>
+                        <span>Maklumat Pemilik</span>
                     </div>
                     <div class="text-gray-600"></div>
                 </div>
@@ -169,7 +169,7 @@
             <div class="bg-white shadow-lg">
                 <div class="flex items-center justify-between p-4 text-sm font-semibold text-purple-100 bg-blue-600 shadow-md focus:outline-none focus:shadow-outline-purple">
                     <div class="flex items-center">
-                        <span>Malumat Bil Pelbagai</span>
+                        <span>Maklumat Bil Pelbagai</span>
                     </div>
                 </div>
                 <div class="border-2 border-blue-500 mt-4 p-4">
