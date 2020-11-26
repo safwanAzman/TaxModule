@@ -160,7 +160,7 @@
                             <div class="col-span-12 lg:col-span-12 xxl:col-span-12">
                                 <div class="bg-blue-500 p-5">
                                     <div class="flex items-center text-white">
-                                            <span class="mr-2 -mt-4 text-base ">Pengunna Masuk :</span>
+                                            <span class="mr-2 -mt-4 text-base ">Pengguna Masuk :</span>
                                             <span class="mr-2 -mt-4 text-base text-gray-200">noorjuliana</span>
                                         
 
