@@ -200,7 +200,7 @@
             {{--Start View Maklumat --}}
             <div class="bg-white shadow-lg mt-5 p-4">
                 <div class="pt-4">
-                    <h1 class="text-blue-500 font-semibold text-xl">Maklumat Cukai</h1>
+                    <h1 class="text-blue-500 font-semibold text-xl">Maklumat {{ ucwords(strtolower($invoice_show->business_type)) }}</h1>
                     <div class="pt-2 leading-7">
                         <p>No Rujukan : <span class="font-semibold">{{ $invoice_show->bil_no }}</span></p>
                         <p>Nama : <span class="font-semibold">{{ $invoice_show->customer_name }}</span></p>
