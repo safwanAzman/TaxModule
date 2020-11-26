@@ -83,9 +83,9 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">Jalaludin Hassan (IND00019)-individu</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">MASLINDA BINTI MUHAMAD ISA (IND00019)-individu</p>
                                 <p class="font-semibold">No Akaun: <span class="text-base text-green-600 font-semibold">T0200549</span></p>
-                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">BANGUNAN YAKIN JALAN BUNGA RAYA</span></p>
+                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 288 JALAN BUDIMAN KG MELAYU </span></p>
                                 <p class="text-sm font-semibold">
                                     Nilai Tahunan: <span class="text-sm text-green-600 font-semibold">2,100.00</span>
                                         Kadar: <span class="text-sm text-green-600 font-semibold">10.00%</span>
@@ -95,7 +95,7 @@
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/0000</span></p>
                                 <p class="font-semibold">2018-02-02 20:28:04</p>
-                                <p class="font-semibold">Dikemaskini Oleh: jemal</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
                     </tr>
 
@@ -121,9 +121,9 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">AJAK SHIRO (810921146261)-individu</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">SUHAZLIN BINTI HARIS (810921146261)-individu</p>
                                 <p class="font-semibold">No Akaun: <span class="text-base text-green-600 font-semibold">T0200703</span></p>
-                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">LOT 1 (RESTORAN AJAK) JALAN MUHUBBAH</span></p>
+                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">BLOK 7 TINGKAT 4 APARTMENT INDAH</span></p>
                                 <p class="text-sm font-semibold">
                                     Nilai Tahunan: <span class="text-sm text-green-600 font-semibold">2,800.00</span>
                                         Kadar: <span class="text-sm text-green-600 font-semibold">11.00%</span>
@@ -133,7 +133,7 @@
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/0001</span></p>
                                 <p class="font-semibold">2018-02-02 20:28:58</p>
-                                <p class="font-semibold">Dikemaskini Oleh: jemal</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
                     </tr>
 
@@ -159,9 +159,9 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">Resort kami sendiri (ORG000009)-Organisasi</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">ROSLINA BT ABDULLAH (1223000009)-Individu</p>
                                 <p class="font-semibold">No Akaun: <span class="text-base text-green-600 font-semibold">T0200714</span></p>
-                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">LOT 555 JALAN SUNGAI KG.AYAM EMAS</span></p>
+                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 22 JLN. BAN RB KG.</span></p>
                                 <p class="text-sm font-semibold">
                                     Nilai Tahunan: <span class="text-sm text-green-600 font-semibold">2,400.00</span>
                                         Kadar: <span class="text-sm text-green-600 font-semibold">11.00%</span>
@@ -171,7 +171,7 @@
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00428</span></p>
                                 <p class="font-semibold">2018-02-02 20:28:04</p>
-                                <p class="font-semibold">Dikemaskini Oleh: jemal</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
                     </tr>
                     <tr class="border">
@@ -196,9 +196,9 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">Resort kamu sendiri (ORG000017)-Organisasi</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">DEWIANA BINTI MOH (123445000017)-Individu</p>
                                 <p class="font-semibold">No Akaun: <span class="text-base text-green-600 font-semibold">T0200713</span></p>
-                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">LOT 555 JALAN SUNGAI KG.AYAM EMAS</span></p>
+                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">LNO 84B TINGKAT 1,LORONG PANDAN DAMAI</span></p>
                                 <p class="text-sm font-semibold">
                                     Nilai Tahunan: <span class="text-sm text-green-600 font-semibold">19,000.00</span>
                                         Kadar: <span class="text-sm text-green-600 font-semibold">11.00%</span>
@@ -208,7 +208,7 @@
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00092</span></p>
                                 <p class="font-semibold">2018-02-02 20:28:04</p>
-                                <p class="font-semibold">Dikemaskini Oleh: jemal</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
                     </tr>
 
@@ -234,9 +234,9 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">Alex yoong f1 (770205105318)-individu</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">TAN SIEW CHEOW (770205105318)-individu</p>
                                 <p class="font-semibold">No Akaun: <span class="text-base text-green-600 font-semibold">T0201105</span></p>
-                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">PT 909 KG BARU PJ</span></p>
+                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 176 JALAN 1/12 TAMAN TAPAH</span></p>
                                 <p class="text-sm font-semibold">
                                     Nilai Tahunan: <span class="text-sm text-green-600 font-semibold">2,800.00</span>
                                         Kadar: <span class="text-sm text-green-600 font-semibold">9.00%</span>
@@ -246,7 +246,7 @@
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00255</span></p>
                                 <p class="font-semibold">2018-02-02 20:28:04</p>
-                                <p class="font-semibold">Dikemaskini Oleh: jemal</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
                     </tr>
 
@@ -272,9 +272,9 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">JAMES BOND (661008084411)-individu</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">HAIRUL BIN KHAMIS (661008084411)-individu</p>
                                 <p class="font-semibold">No Akaun: <span class="text-base text-green-600 font-semibold">T0202491</span></p>
-                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">PT 3333 KG.BARU KALIM</span></p>
+                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO,10 JALAN SUADAMAI </span></p>
                                 <p class="text-sm font-semibold">
                                     Nilai Tahunan: <span class="text-sm text-green-600 font-semibold">6,200.00</span>
                                         Kadar: <span class="text-sm text-green-600 font-semibold">9.00%</span>
@@ -284,7 +284,7 @@
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00058</span></p>
                                 <p class="font-semibold">2018-02-02 20:28:04</p>
-                                <p class="font-semibold">Dikemaskini Oleh: jemal</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
                     </tr>
 
@@ -310,9 +310,9 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">JOKOWI DODO (701212113321)-individu</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">SALINA BINTI BUANG (701212113321)-individu</p>
                                 <p class="font-semibold">No Akaun: <span class="text-base text-green-600 font-semibold">T0203049</span></p>
-                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">PT 77 KAMPUNG AC MIZAL</span></p>
+                                <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 22 JALAN PERMAI </span></p>
                                 <p class="text-sm font-semibold">
                                     Nilai Tahunan: <span class="text-sm text-green-600 font-semibold">1,200.00</span>
                                         Kadar: <span class="text-sm text-green-600 font-semibold">10.00%</span>
@@ -322,7 +322,7 @@
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00059</span></p>
                                 <p class="font-semibold">2018-02-02 20:28:04</p>
-                                <p class="font-semibold">Dikemaskini Oleh: jemal</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
                     </tr>
                     
@@ -343,10 +343,10 @@
                 <p>Status Akaun: <span class="text-green-600 font-semibold mr-3">Aktif</span> Status Harta: <span class="text-green-600 font-semibold">Normal</span></p>
                 <p>No Rujukan :<span class="text-gray-500 font-semibold mr-2"> MPK/PEN/00001</span></p>
                 <p>No Akaun :  <span class="text-blue-600 font-semibold">T0200703</span> <span class="text-gray-600 font-semibold">(T0200703)</span></p>
-                <p>Pemilik :  <span class="text-green-600 font-semibold">AJAK SHIRO (810921146261)</span></p>
-                <p>Alamat Harta :  <span class="text-gray-500 font-semibold">LOT 1 (RESTORAN AJAK) JALAN MUHUBBAH TAMAN BESERAH 25300 KUANTAN </span></p>
-                <p>Kawasan :  <span class="text-gray-500 font-semibold mr-2">Kuantan</span></p>
-                <p>Taman :  <span class="text-gray-500 font-semibold">TMN BESERAH</span></p>
+                <p>Pemilik :  <span class="text-green-600 font-semibold">SUHAZLIN BINTI HARIS (810921146261)</span></p>
+                <p>Alamat Harta :  <span class="text-gray-500 font-semibold">BLOK 7 TINGKAT 4 APARTMENT INDAH 25300 KUANTAN </span></p>
+                <p>Kawasan :  <span class="text-gray-500 font-semibold mr-2">KUANTAN</span></p>
+                <p>Taman :  <span class="text-gray-500 font-semibold">APARTMENT INDAH</span></p>
                 <p>Jalan :  <span class="text-gray-500 font-semibold">JALAN MUHUBBAH</span></p>
 
 
