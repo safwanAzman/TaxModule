@@ -27,7 +27,7 @@
                 x-transition:leave="ease-in duration-200"
                 x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
                 x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                class="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-lg lg:max-w-2xl xl:max-w-6xl sm:w-full sm:p-6"
+                class="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-lg lg:max-w-2xl xl:max-w-2xl sm:w-full sm:p-6"
                 role="dialog" aria-modal="true" aria-labelledby="modal-headline"
             >
             
@@ -75,7 +75,7 @@
                                                 <x-form.input  label="Jumlah" value="" livewire="wire:model=paid_amount"/>
                                             </div>
                                         </x-slot>
-                                        <div class="flex justify-end mt-5">
+                                        <div class="flex justify-center mt-5">
                                             <button class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex transition duration-150" @click="modalOpen3 = false" wire:click="confirmPayment('{{$document_no}}', '{{$bank_id}}', '{{$check_no}}', '{{$check_date}}', {{$paid_amount}})">
                                                 <span class="text-white">Simpan</span>
                                             </button>
