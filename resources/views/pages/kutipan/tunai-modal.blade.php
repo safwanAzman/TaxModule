@@ -1,5 +1,5 @@
 <div x-data="{ modalOpen2: false }">
-    <button class="bg-white hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex transition duration-150 " @click="modalOpen2 = true">
+    <button class="bg-white hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex transition duration-150 " @click="modalOpen2 = true" wire:click="setPaymentMode('TUNAI')">
         <span class="text-blue-500 text-xs">Tunai</span>
     </button>
 <div x-show="modalOpen2" style="display: none;"
@@ -35,7 +35,7 @@
                     <div class="">
                         <div class="flex items-center justify-between p-4  text-md font-semibold text-teal-100 bg-blue-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-teal">
                             <h3 class="text-lg font-semibold leading-6 text-white" id="modal-headline">
-                               Senarai Tunai
+                                Pembayaran Secara Tunai
                             </h3>
                             
                             <div>
@@ -56,33 +56,26 @@
                             </div>
                         </div>
                         <div class="bg-gray-100 mt-5 p-4">
-                           <div class="grid grid-cols-12 gap-6 p-5">
+                            <div class="grid grid-cols-12 gap-6 p-5">
                                 <div class="flex flex-col-reverse col-span-12 lg:col-span-12 xxl:col-span-12 lg:block">
                                     <x-form.basic-form action="">
                                         <x-slot name="content">
                                             <div class="grid gap-2 lg:grid-cols-3 sm:grid-cols-3">
-                                                <x-form.dropdown label="Cash" value="" default="yes">
-                                                    <option value="0">Cash (3800)</option>
-                                                </x-form.dropdown> 
-                                                <x-form.input label="Document Ref. No" value="" livewire=""/>
-                                                <x-form.input label="Amount (RM)" value="" livewire=""/>
-                                            </div>
-                                            <div class="grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
-                                                <x-form.input  label="Transaction Description" value="" livewire=""/>
-                                                <x-form.input  type="date" label="Transaction Date" value="" livewire=""/>
+                                                <x-form.input label="Document Ref. No" value="" livewire="wire:model=document_no"/>
+                                                <x-form.input label="Amount (RM)" value="" livewire="wire:model=paid_amount"/>
                                             </div>
                                         </x-slot>
                                         <div class="flex justify-end mt-5">
-                                            <button class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex transition duration-150">
+                                            <button class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex transition duration-150" @click="modalOpen2 = false" wire:click="confirmPayment('{{$document_no}}', '{{$bank_id}}', '{{$check_no}}', '{{$check_date}}', {{$paid_amount}})">
                                                 <span class="text-white">Simpan</span>
                                             </button>
-                                            <div class="cursor-pointer bg-blue-500 hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex transition duration-150 ml-2"  @click="modalOpen2 = false">
+                                            <div class="cursor-pointer bg-blue-500 hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex transition duration-150 ml-2"  @click="modalOpen2 = false" >
                                                 <span class="text-white">Tutup</span>
                                             </div>
                                         </div>
                                     </x-form.basic-form>
                                 </div>
-                           </div> 
+                            </div> 
                         </div>
                 </div>
             </div>

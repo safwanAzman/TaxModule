@@ -8,7 +8,7 @@
     <div class="mt-1 flex rounded-md shadow-sm mb-4">
         <input
             type="{{ $type }}" value="{{ $value }}" {{ $attributes }}
-            wire:model="{{ $livewire }}"
+            {{ $livewire }}
             class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 {{ ($errors->has($value)) ? 'border-red-300 bg-red-50 text-red-900' : ''}}"
         >
     </div>
