@@ -1,4 +1,4 @@
-<div x-data="{ modalOpen2: true}">
+<div x-data="{ modalOpen2: false}">
     <button class="bg-white hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex" @click="modalOpen2 = true" >
         <span class="text-blue-500">Edit</span>
     </button>
