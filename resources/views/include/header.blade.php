@@ -39,7 +39,7 @@
 
   </head>
   <body>
-     <header class="z-10 py-4 bg-blue-500  shadow-md " style="height: 60px;">
+     <header class="z-10 py-4 bg-blue-500  shadow-md " style="height: 7vh;">
         <div class="flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300">
             <img src="{{asset('img/eCouncil_putih.png')}}" class="ml-6 h-12 bg-contain bg-center"/>
           <!-- Mobile hamburger -->
@@ -159,7 +159,7 @@
         </div>
       </header>
     <div
-      class="flex bg-gray-50" style="height: 100vh;"
+      class="flex bg-gray-50" style="height: 93vh;"
       :class="{ 'overflow-hidden': isSideMenuOpen }"
     >
       <!-- Desktop sidebar -->
