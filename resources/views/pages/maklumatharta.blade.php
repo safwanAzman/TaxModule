@@ -1,4 +1,4 @@
-<div x-data="{ modalOpen2: false}">
+<div x-data="{ modalOpen2: true}">
     <button class="bg-white hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex" @click="modalOpen2 = true" >
         <span class="text-blue-500">Edit</span>
     </button>
@@ -116,10 +116,11 @@
                                     </x-form.dropdown>
 
                                     <div class=" grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
-                                        <x-form.input label="Luas Bagunan" value="" livewire=""/>
+                                        <x-form.input label="Luas Bagunan" value="10,000.00" livewire=""/>
                                         <div class="mt-5">
                                             <x-form.dropdown label="" value="" default="yes">
-                                                <option value="" selected>MPS</option>
+                                                <option value="" selected>KPS</option>
+                                                <option value="" >MPS</option>
                                             </x-form.dropdown>
                                         </div>
                                     </div>
@@ -137,12 +138,12 @@
                                         </div>
                                     </div>
                                     <div class=" grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
-                                        <x-form.input label="No Hak Milik" value="" livewire=""/>
+                                        <x-form.input label="No Hak Milik" value="1235678" livewire=""/>
 
-                                        <x-form.input label="No Lot" value="" livewire=""/>
+                                        <x-form.input label="No Lot" value="767" livewire=""/>
                                     </div>
 
-                                    <x-form.input label="Cacatan" value="" livewire=""/>
+                                    <x-form.input label="Catatan" value="" livewire=""/>
 
                                </div>
                            </div>
@@ -151,7 +152,7 @@
                                     <button class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex" onclick="kemaskiniBtn2()">
                                         <span class="text-white">Simpan</span>
                                     </button>
-                                     <button class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex ml-4" @click="modalOpen = false" >
+                                     <button class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex ml-4" @click="modalOpen2 = false" >
                                         <span class="text-white">Tutup</span>
                                     </button>
                                 </div>
@@ -160,20 +161,79 @@
                         </div>
                         
                         <div class="bg-gray-100 mt-5 p-5">
-                            <h1 class="text-lg text-blue-500 font-semibold">Sejarah Perubahan Maklumat Harta (T0200549)</h1>
+                            <h1 class="text-lg text-blue-500 font-semibold">Pengiraan Nilaian Tahunan (T0200549)</h1>
                            <div class="grid grid-cols-12 gap-6 pt-5">
                                <div class="flex flex-col-reverse col-span-12 lg:col-span-12 xxl:col-span-12 lg:block">
-                                    <div x-data="{ isOpen1: false}">
+                                    <div x-data="{ isOpen1: false}" >
                                         <button class="flex items-center justify-between w-full py-3 font-semibold bg-blue-500 p-4" @click="isOpen1 = !isOpen1">
-                                            <div class="text-base text-white">Sejarah Perubahan</div>
+                                            <div class="text-base text-white">Nilaian Terperinci</div>
                                             <svg x-show="!isOpen1" class="fill-current text-white" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm1-9h2a1 1 0 010 2h-2v2a1 1 0 01-2 0v-2H9a1 1 0 010-2h2V9a1 1 0 012 0v2z"/></svg>
                                             <svg x-show="isOpen1" class="fill-current text-white" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm4-8a1 1 0 01-1 1H9a1 1 0 010-2h6a1 1 0 011 1z"/></svg>
                                         </button>
-                                        <table class="table-fixed mt-3 bg-white" x-show="isOpen1">
+
+                                        <div class="p-4" x-show="isOpen1">
+                                            <div class=" grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
+                                                <x-form.dropdown label="Kategori Pegangan" value="Biru" default="yes">
+                                                    <option value="" >Sila Pilih</option>
+                                                    <option value="" >Kediaman (Landed)</option>
+                                                    <option value="" >Kediaman Bertingkat</option>
+                                                    <option value="" >Pangsapuri Servis</option>
+                                                    <option value="" selected>Perdagangan</option>
+                                                    <option value="" >Perindustrian</option>
+                                                    <option value="" >Pertanian</option>
+                                                    <option value="" >Tanah Kosong untuk Pembangunan</option>
+                                                </x-form.dropdown>
+                                                
+                                                <x-form.dropdown label="Maklumat Bangunan" value="Biru" default="yes">
+                                                    <option value="" >Sila Pilih</option>
+                                                    <option value="" selected>Teres 1 Tingkat</option>
+                                                    <option value="" >Teres 2 Tingkat</option>
+                                                    <option value="" >Rumah Sesebuah</option>
+                                                </x-form.dropdown>
+
+                                                 <x-form.input label="(A) Nilai Pasaran skp (RM)" value="40.00" livewire=""/>
+
+                                                 <x-form.input label="(B) Kadar T.K." value="3.5%" livewire=""/>
+
+                                                 <x-form.input label="(C) Nilai Pasaran (RM) - KP x (A)" value="400,000.00" livewire=""/>
+
+                                                <x-form.input label="(D) Nilaian Tahunan (RM) - (C) x 10%" value="40,000.00" livewire=""/>
+
+                                                <x-form.input label="Cukai Taksiran Setahun (RM) - (D) x (B)" value="1400.00" livewire=""/>
+
+                                                <x-form.input label="Cukai Taksiran Sepenggal (RM)" value="700.00" livewire=""/>
+                                            </div>
+                                            <div class="flex justify-end">
+                                                <div class="flex pt-5">
+                                                        <button class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex" onclick="kemaskiniBtn2()">
+                                                            <span class="text-white">Simpan</span>
+                                                        </button>
+                                                        <button class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex ml-4" @click="modalOpen2 = false" >
+                                                            <span class="text-white">Tutup</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-100 mt-5 p-5">
+                            <h1 class="text-lg text-blue-500 font-semibold">Sejarah Perubahan Maklumat Harta (T0200549)</h1>
+                           <div class="grid grid-cols-12 gap-6 pt-5">
+                               <div class="flex flex-col-reverse col-span-12 lg:col-span-12 xxl:col-span-12 lg:block">
+                                    <div x-data="{ isOpen2: false}">
+                                        <button class="flex items-center justify-between w-full py-3 font-semibold bg-blue-500 p-4" @click="isOpen2 = !isOpen2">
+                                            <div class="text-base text-white">Sejarah Perubahan</div>
+                                            <svg x-show="!isOpen2" class="fill-current text-white" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm1-9h2a1 1 0 010 2h-2v2a1 1 0 01-2 0v-2H9a1 1 0 010-2h2V9a1 1 0 012 0v2z"/></svg>
+                                            <svg x-show="isOpen2" class="fill-current text-white" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm4-8a1 1 0 01-1 1H9a1 1 0 010-2h6a1 1 0 011 1z"/></svg>
+                                        </button>
+                                        <table class="table-fixed mt-3 bg-white" x-show="isOpen2">
                                             <thead>
                                             <tr class="boder bg-blue-500 text-white">
                                                 <th class="px-4 py-2 text-left" style="width: 15%">Tarikh Pengguna Ubah</th>
-                                                <th class="px-4 py-2 text-left" style="width: 40%">Cacatan</th>
+                                                <th class="px-4 py-2 text-left" style="width: 40%">Catatan</th>
                                                 <th class="px-4 py-2 text-left" style="width: 15%"></th>
                                                 
                                             </tr>
@@ -249,7 +309,7 @@
                     <div class="grid grid-cols-12 gap-6 pt-5 bottom-0">
                         <div class="flex flex-col-reverse col-span-12 lg:col-span-12 xxl:col-span-12 lg:block">
                             <div class="col-span-12 lg:col-span-12 xxl:col-span-12">
-                                <div class="bg-blue-500 p-5">
+                                <div class="bg-black p-5">
                                     <div class="flex items-center text-white">
                                             <span class="mr-2 -mt-4 text-base ">Pengunna Masuk :</span>
                                             <span class="mr-2 -mt-4 text-base text-gray-200">noorjuliana</span>
