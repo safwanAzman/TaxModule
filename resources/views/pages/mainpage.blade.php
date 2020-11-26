@@ -8,7 +8,7 @@
               
                 <!-- penilaian Batch Harta Baru -->
                   <a href="{{route('SenaraiHartaBaru.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                          <img class="h-48 w-48" src="{{ asset('img/icon/batch harta baru.png') }}">
                       </div>
@@ -17,7 +17,7 @@
 
                   <!-- Senarai Harta -->
                   <a href="{{route('SenaraiHartaCukai.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <img class="h-48 w-48" src="{{ asset('img/icon/senarai harta.png') }}">
                       </div>
@@ -26,7 +26,7 @@
 
                   <!-- Proses Bil Cukai -->
                   <a href="{{route('ProsesBilCukai.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <img class="h-48 w-48" src="{{ asset('img/icon/proses bil cukai.png') }}">
                       </div>
@@ -35,7 +35,7 @@
 
                    <!-- Senarai Akaun -->
                   <a href="{{route('SenaraiAkaun.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <img class="h-48 w-48" src="{{ asset('img/icon/senarai akaun.png') }}">
                       </div>
@@ -44,7 +44,7 @@
 
                   <!-- Tempahan Gelanggang -->
                   <a href="{{route('TempahGelanggang.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <img class="h-48 w-48" src="{{ asset('img/icon/tempahan gelanggang.png') }}">
                       </div>
@@ -54,7 +54,7 @@
 
                   <!-- Senarai Tempahan -->
                   <a href="{{route('SenaraiTempahan.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full ">
                         <img class="h-48 w-48" src="{{ asset('img/icon/senarai tempahan.png') }}">
                       </div>
@@ -63,7 +63,7 @@
 
                   <!-- Kutipan -->
                   <a href="{{route('SenaraiKutipan.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <img class="h-48 w-48" src="{{ asset('img/icon/kutipan.png') }}">
                       </div>
@@ -72,7 +72,7 @@
 
                   <!-- Bil Pelbagai -->
                   <a href="{{route('Bilpelbagai.index')}}" class="h-48 w-48 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <img class="h-48 w-48" src="{{ asset('img/icon/bil pelbagai.png') }}">
                       </div>
