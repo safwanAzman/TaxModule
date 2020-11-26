@@ -38,9 +38,9 @@
 
   </head>
   <body>
-     <header class="z-10 py-4 bg-blue-500  shadow-md " style="height: 7vh;">
+     <header class="z-10 py-4 bg-blue-500  shadow-md " style="height: 60px;">
         <div class="flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300">
-            <a class="ml-6 text-xl font-bold text-white" href="#"> eCouncil </a>
+            <img src="{{asset('img/eCouncil_putih.png')}}" class="ml-6 h-12 bg-contain bg-center"/>
           <!-- Mobile hamburger -->
           <button
             class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
@@ -158,7 +158,7 @@
         </div>
       </header>
     <div
-      class="flex bg-gray-50" style="height: 93vh;"
+      class="flex bg-gray-50" style="height: 100vh;"
       :class="{ 'overflow-hidden': isSideMenuOpen }"
     >
       <!-- Desktop sidebar -->
