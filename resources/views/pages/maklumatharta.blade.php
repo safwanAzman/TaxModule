@@ -62,8 +62,8 @@
                                    <div class=" grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
                                         <x-form.input label="No.Akaun" value="T0200703" livewire=""/>
                                         <x-form.input label="No.Rujukan" value="MPK/PEN/00001" livewire=""/>
-                                        <x-form.input label="Pemilik" value="810921146261 -AJAK SHIRO (Individu)" livewire=""/>
-                                        <x-form.input label="Nama Di Bil" value="AJAK SHIRO" livewire=""/>
+                                        <x-form.input label="Pemilik" value="810921146261 -SUHAZLIN BINTI HARIS (Individu)" livewire=""/>
+                                        <x-form.input label="Nama Di Bil" value="SUHAZLIN BINTI HARIS" livewire=""/>
                                    </div>
 
                                </div>
@@ -86,9 +86,9 @@
                                         </x-form.dropdown>
                                         <x-form.input label="Tarikh Daftar" value="15/05/2015" livewire=""/>
                                    </div>
-                                    <x-form.input label="Alamat" value="LOT 1 (RESTORAN AJAK)" livewire=""/>
+                                    <x-form.input label="Alamat" value="BLOK 7 TINGKAT 4" livewire=""/>
+                                    <x-form.input label="" value="APARTMENT INDAH" livewire=""/>
                                     <x-form.input label="" value="JALAN MUHUBBAH" livewire=""/>
-                                    <x-form.input label="" value="TAMAN BESERAH" livewire=""/>
 
                                     <div class=" grid gap-2 lg:grid-cols-3 sm:grid-cols-3">
                                         <x-form.input label="POSKOD" value="25300" livewire=""/>

@@ -68,12 +68,12 @@
                                         <x-form.input label="No.KP Lama" value="" livewire=""/>
 
                                         <x-form.dropdown label="Gelaran" value="Biru" default="yes">
-                                            <option value="" selected>Encik</option>
+                                            <option value="" selected>Puan</option>
                                         </x-form.dropdown>
 
-                                        <x-form.input label="Nama" value="AJAK SHIRO" livewire=""/> 
+                                        <x-form.input label="Nama" value="SUHAZLIN BINTI HARIS" livewire=""/> 
 
-                                        <x-form.input label="No Pasport" value="AJAK SHIRO" livewire=""/>
+                                        <x-form.input label="No Pasport" value="" livewire=""/>
 
                                         <x-form.dropdown label="Warga Negara" value="Biru" default="yes">
                                             <option value="" selected>Malaysia</option>
@@ -87,15 +87,15 @@
                                         <x-form.input label="Permastutin" value="" livewire=""/><span class="mt-8 ml-3">Tahun</span>
                                     </div>
 
-                                    <x-form.input label="Alamat" value="No.3 JALAN RAJAWALI 5" livewire=""/>
-                                    <x-form.input label="" value="TAMAN RAJAWALI" livewire=""/>
-                                    <x-form.input label="" value="" livewire=""/>
+                                    <x-form.input label="Alamat" value="BLOK 7 TINGKAT 4" livewire=""/>
+                                    <x-form.input label="" value="APARTMENT INDAH" livewire=""/>
+                                    <x-form.input label="" value="JALAN MUHUBBAH" livewire=""/>
 
                                     <div class=" grid gap-2 lg:grid-cols-3 sm:grid-cols-3">
-                                        <x-form.input label="POSKOD" value="47500" livewire=""/>
-                                        <x-form.input label="BANDAR" value="SUBANG JAYA" livewire=""/>
+                                        <x-form.input label="POSKOD" value="25300" livewire=""/>
+                                        <x-form.input label="BANDAR" value="KUANTAN" livewire=""/>
                                         <x-form.dropdown label="NEGERI" value="Biru" default="yes">
-                                            <option value="" selected>SELANGOR</option>
+                                            <option value="" selected>PAHANG</option>
                                         </x-form.dropdown>
                                     </div>
 
@@ -107,7 +107,7 @@
                                <div class="col-span-12 lg:col-span-6 xxl:col-span-6">
                                    <div class=" grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
                                         <x-form.dropdown label="JANTINA" value="Biru" default="yes">
-                                            <option value="" selected>LELAKI</option>
+                                            <option value="" selected>PEREMPUAN</option>
                                         </x-form.dropdown>
 
                                         <x-form.input label="TARIKH LAHIR" value="21/09/1981" livewire=""/>

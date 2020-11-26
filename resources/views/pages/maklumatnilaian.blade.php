@@ -62,7 +62,7 @@
                                    <div class=" grid gap-2 lg:grid-cols-3 sm:grid-cols-3">
                                         <x-form.input label="No.Akaun" value="T0200549" livewire=""/>
                                         <x-form.input label="No.Rujukan" value="MPK/PEN/00000" livewire=""/>
-                                        <x-form.input label="Pemilik" value="IND00019-JALALUDIN HASSAN (individu)" livewire=""/>
+                                        <x-form.input label="Pemilik" value="SUHAZLIN BINTI HARIS (individu)" livewire=""/>
                                    </div>
 
                                </div>
@@ -134,7 +134,7 @@
                                                         
                                                     </td>
                                                     <td class="border px-4 py-2 text-base font-semibold" colspan="5">
-                                                        <p>Pembetulan Kadar Pembetulan Kadar</p>
+                                                        <p>Pembetulan Kadar</p>
                                                     </td>
                                                    
                                                 </tr>
@@ -169,7 +169,7 @@
                                             
 
                                             <span class="ml-3 mr-2 -mt-4 text-base">Pengguna Ubah</span>
-                                            <span class="mr-2 -mt-4 text-base text-gray-200">Jamal</span>
+                                            <span class="mr-2 -mt-4 text-base text-gray-200">Admin</span>
 
                                             <span class="ml-3 mr-2 -mt-4 text-base">Tarikh Ubah</span>
                                             <span class="mr-2 -mt-4 text-base text-gray-200">2018-02-03 23:13:11</span>

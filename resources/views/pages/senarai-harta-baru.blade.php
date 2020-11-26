@@ -156,7 +156,7 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">AARON AZIZ SDN BHD (ORG00141)</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">FOONG MOOI ENG (ORG00141)</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 3KG.PASIR EMAS</span></p>
                                 
                             </td>
