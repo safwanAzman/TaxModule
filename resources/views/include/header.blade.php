@@ -15,6 +15,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
+    <link rel="icon" href="{{asset('img/eCouncil_biru.png')}}" type="image/gif" sizes="18x18">
  
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"/>
