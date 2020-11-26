@@ -320,7 +320,7 @@
                                             
 
                                             <span class="ml-3 mr-2 -mt-4 text-base">Pengguna Ubah</span>
-                                            <span class="mr-2 -mt-4 text-base text-gray-200">Jamal</span>
+                                            <span class="mr-2 -mt-4 text-base text-gray-200">Admin</span>
 
                                             <span class="ml-3 mr-2 -mt-4 text-base">Tarikh Ubah</span>
                                             <span class="mr-2 -mt-4 text-base text-gray-200">2018-02-03 23:13:11</span>
