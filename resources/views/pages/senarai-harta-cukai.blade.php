@@ -337,7 +337,10 @@
             <div class="flex items-center">
                 <span>Maklumat Harta</span>
             </div>
-            <div class="text-gray-600">@include('pages.maklumatharta')</div>
+            <div class="text-gray-600 flex">
+                @include('pages.info-modal')
+                @include('pages.maklumatharta') 
+            </div>
             </a>
             <div class="p-4 font-semibold text-sm leading-6">
                 <p>Status Akaun: <span class="text-green-600 font-semibold mr-3">Aktif</span> Status Harta: <span class="text-green-600 font-semibold">Normal</span></p>
