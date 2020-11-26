@@ -364,9 +364,9 @@
                 <p>Status Nilaian: <span class="text-green-600 font-semibold mr-3">Kemaskini</span></p>
                 <p>Tarikh Nilaian :<span class="text-gray-500 font-semibold mr-2"> 13/05/2015</span></p>
                 <p>Tarikh Mula Kadar: <span class="text-gray-500 font-semibold mr-2">01/07/2015</span></p>
-                <p>Nilai Tahunan :  <span class="text-gray-500 font-semibold mr-2">2,800.00</span></p>
-                <p>Kadar :  <span class="text-gray-500 font-semibold mr-2">11.00</span></p>
-                <p>Cukai Tahunan :  <span class="text-gray-500 font-semibold mr-2">308.00</span></p>
+                <p>Nilai Tahunan :  <span class="text-gray-500 font-semibold mr-2">40,000.00</span></p>
+                <p>Kadar :  <span class="text-gray-500 font-semibold mr-2">3.5%</span></p>
+                <p>Cukai Tahunan :  <span class="text-gray-500 font-semibold mr-2">1400.00</span></p>
             </div>
         </div>
     </div>

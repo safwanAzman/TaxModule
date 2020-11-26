@@ -15,9 +15,15 @@
             <div class=" mb-4 font-bold text-base pl-2">
             <h1>Penggal Pertama-2018</h1>
              </div>
-                    <span class=" ml-3 mr-2 -mt-4 text-base text-gray-500">Kawasan</span>
+                    <span class=" ml-3 mr-2 -mt-4 text-base text-gray-500">Mukim</span>
                     <x-form.dropdown label="" value="" default="yes">
-                        <option value=""selected>GADING JAYA</option>
+                        <option value=""selected>SILA PILIH</option>
+                        <option value="">KUALA KUANTAN</option>
+                        <option value="">ULU KUANTAN</option>
+                        <option value="">SG.KARANG</option>
+                        <option value="">BESERAH</option>
+                        <option value="">ULU LEPAR</option>
+                        <option value="">PENOR</option>
                     </x-form.dropdown>  
             </div>
                
@@ -54,7 +60,7 @@
                     <tr class="border bg-blue-100">
                         <td class="px-4 py-3" style=" border: 1px solid #ddd;">
                             <div class="flex text-2xl">
-                                <p class="font-semibold font-semibold ">1</p>
+                                <p class="font-semibold">1</p>
                                 <svg
                                     class="w-8 h-8 ml-5 text-blue-500"
                                     aria-hidden="true"
@@ -73,7 +79,7 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">Gading Jaya</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">Kuala Kuantan</p>
                                 <p class="font-semibold">Bilangan Pegangan Aktif <span class="text-base text-blue-600 font-semibold">19</span></p>
                                 <p class="font-semibold">Jumlah Cukai Sepenggal <span class="text-base text-blue-600 font-semibold">$10,294.00</span></p>
                                 
