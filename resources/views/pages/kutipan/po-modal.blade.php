@@ -1,11 +1,11 @@
-<div x-data="{ modalOpen3: false}">
-    <button class="bg-white hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex ml-2 transition duration-150" @click="modalOpen3 = true" wire:click="setPaymentMode('CEK')">
-        <span class="text-blue-500 text-xs">Cek</span>
+<div x-data="{ modalOpen4: false}">
+    <button class="bg-white hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex ml-2 transition duration-150" @click="modalOpen4 = true" wire:click="setPaymentMode('MO/PO')>
+        <span class="text-blue-500 text-xs">MO/PO</span>
     </button>
-<div x-show="modalOpen3" style="display: none;"
+<div x-show="modalOpen4" style="display: none;"
         class="fixed inset-0 z-40 overflow-y-auto">
         <div class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-            <div x-show="modalOpen3"
+            <div x-show="modalOpen4"
                 x-description="Background overlay, show/hide based on modal state."
                 x-transition:enter="ease-out duration-300"
                 x-transition:enter-start="opacity-0"
@@ -35,12 +35,12 @@
                     <div class="">
                         <div class="flex items-center justify-between p-4  text-md font-semibold text-teal-100 bg-blue-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-teal">
                             <h3 class="text-lg font-semibold leading-6 text-white" id="modal-headline">
-                                Pembayaran Secara Cek
+                                Pembayaran Secara MO/PO
                             </h3>
                             
                             <div>
                             <svg
-                                @click="modalOpen3 = false"
+                                @click="modalOpen4 = false"
                                 class="w-8 h-8 text-white cursor-pointer"
                                 aria-hidden="true"
                                 fill="none"
@@ -60,26 +60,19 @@
                                 <div class="flex flex-col-reverse col-span-12 lg:col-span-12 xxl:col-span-12 lg:block">
                                    <x-form.basic-form action="">
                                         <x-slot name="content">
-                                            <div class="grid gap-2 lg:grid-cols-1 sm:grid-cols-1">
-                                                <x-form.dropdown label="Nama Bank" value="" default="yes" value="bank_id">
-                                                @foreach ($banks as $bank)
-                                                    <option class="font-mono" value="{{ $bank->id }}">{{ $bank->description }}</option>
-                                                @endforeach
-                                                </x-form.dropdown>
-                                            </div>
                                             <div class="grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
-                                                <x-form.input  label="No Cek" value="" livewire="wire:model=check_no"/>
-                                                <x-form.input  type="date" label="Tarikh Cek" value="" livewire="wire:model=check_date"/>
+                                                <x-form.input  label="Postal Order Number" value="" livewire="wire:model=check_no"/>
+                                                <x-form.input  type="date" label="Postal Order Date" value="" livewire="wire:model=check_date"/>
                                             </div>
                                             <div class="grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
                                                 <x-form.input  label="Jumlah" value="" livewire="wire:model=paid_amount"/>
                                             </div>
                                         </x-slot>
                                         <div class="flex justify-end mt-5">
-                                            <button class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex transition duration-150" @click="modalOpen3 = false" wire:click="confirmPayment('{{$document_no}}', '{{$bank_id}}', '{{$check_no}}', '{{$check_date}}', {{$paid_amount}})">
+                                            <button class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex transition duration-150" @click="modalOpen4 = false" wire:click="confirmPayment('{{$document_no}}', '{{$bank_id}}', '{{$check_no}}', '{{$check_date}}', {{$paid_amount}})">
                                                 <span class="text-white">Simpan</span>
                                             </button>
-                                            <div class="cursor-pointer bg-blue-500 hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex transition duration-150 ml-2"  @click="modalOpen3 = false">
+                                            <div class="cursor-pointer bg-blue-500 hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex transition duration-150 ml-2"  @click="modalOpen4 = false">
                                                 <span class="text-white">Tutup</span>
                                             </div>
                                         </div>

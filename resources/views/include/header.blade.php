@@ -36,6 +36,7 @@
 
     <script src="{{ asset('theme/public/assets/js/charts-pie.js')}}" defer></script>
 
+    @livewireStyles
 
   </head>
   <body>
@@ -1860,6 +1861,7 @@
         </main>
       </div>
     </div>
+    @livewireScripts
   </body>
 </html>
 
