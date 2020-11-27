@@ -75,4 +75,7 @@ Route::resource('SenaraiKutipan','\App\Http\Controllers\kutipan\SenaraiKutipanCo
 Route::resource('Bilpelbagai','\App\Http\Controllers\BilPelbagaiController');
 Route::get('DownloadResitBil','\App\Http\Controllers\BilPelbagaiController@downloadBil');
 
+Route::resource('CukaiTaksiranTest','\App\Http\Controllers\cukai\CukaiTaksiranController');
+Route::get('CukaiTaksiranPDF','\App\Http\Controllers\cukai\CukaiTaksiranController@cukaiTaksiranPDF');
+
 });
