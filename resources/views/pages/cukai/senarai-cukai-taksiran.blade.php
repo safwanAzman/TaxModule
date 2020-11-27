@@ -49,8 +49,16 @@
 
     <!-- Start Table Taksiran -->
     <div class="col-span-12 lg:col-span-12 xxl:col-span-12 mt-5">
-        <div class="pb-4 text-blue-500 font-semibold text-lg ">
-            <h1>Table Taksiran</h1>
+        <div class="flex justify-between mb-3">
+            <div class="text-blue-500 font-semibold text-lg ">
+                <h1>Table Taksiran</h1>
+            </div>
+            <a href="/CukaiTaksiranPDF" target="blank" class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex cursor-pointer ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-white mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                </svg>
+                <span class="text-white text-sm flex items-center">Cetak</span>
+            </a>
         </div>
         <x-general.table>
                 <x-slot name="thead">
