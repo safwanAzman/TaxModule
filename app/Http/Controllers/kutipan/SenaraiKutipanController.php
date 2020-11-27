@@ -5,6 +5,7 @@ namespace App\Http\Controllers\kutipan;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Invoice;
+use Illuminate\Support\Facades\DB;
 use PDF;
 
 class SenaraiKutipanController extends Controller
@@ -96,11 +97,17 @@ class SenaraiKutipanController extends Controller
         // return view ('pages.kutipan.resit-PDF', compact('invoice'));
     }
 
-    // public function senaraiTransaksiPDF($duration){
-    //     $invoice = Invoice::find($id);
-    //     $pdf = PDF::loadView('pages.kutipan.senaraiTransaksiPDF', compact('invoice'))->setPaper('A4','portrait');
-    //     return $pdf->stream();
-    //     // return view ('pages.kutipan.resit-PDF', compact('invoice'));
-    // }
+    public function senaraiTransaksiPDF($duration){
+        $details = DB::select(
+            "select a.receipt_no, a.created_at, b.bil_no, b.bil_date, b.business_type, c.hasil_code, c.compound_status, c.plate_no, c.amount
+            from receipts a, invoices b,invoice_details c
+            where a.invoice_id = b.id and b.id = c.invoice_id
+            and DATEDIFF(DAY, a.created_at, GETDATE()) <= $duration
+            order by a.receipt_group desc"
+        );
+        $pdf = PDF::loadView('pages.kutipan.senaraiTransaksiPDF', compact('details'))->setPaper('A4','landscape');
+        return $pdf->stream();
+        // return view ('pages.kutipan.senaraiTransaksiPDF', compact('details'));
+    }
 
 }
