@@ -26,7 +26,7 @@ class KutipanCalculate extends Component
 
     public function render(){
         $rsearch = $this->search;
-        if( strlen($rsearch > 1) ){
+        if( strlen($rsearch) > 0 ){
             $rsearch = $this->search.'%';
         }
 
@@ -37,8 +37,12 @@ class KutipanCalculate extends Component
             'invoice_search'    => Invoice::where('status', 0)
                                 -> where('bil_no', 'like',  $rsearch)
                                 -> get(),
-            'receipts'          => Receipt::all(),
+            'receipts'          => Receipt::whereRAW('DATEDIFF(DAY, created_at, GETDATE()) = 0'),
         ]);
+    }
+
+    public function chooseCategory($category = ''){
+        $this->search = $category;
     }
 
     public function showInvoice($invoice_id = ''){
@@ -89,23 +93,30 @@ class KutipanCalculate extends Component
         if( $this->balance_amount < 0 ){
             session()->flash('fail', 'Jumlah baki negatif!');
         }else{
+            $receipt_group = Receipt::all()->max('receipt_group');
+            
             foreach($this->invoice_process as $invoice){
                 $invoice->update([
                     'status' => 2,
                     'updated_at' => date("Y-m-d h:i:sa"),
                 ]);
 
-                Receipt::create([
+                $receipt = Receipt::create([
+                    'receipt_group' => $receipt_group + 1,
                     'invoice_id'    => $invoice->id,
-                    'payment_mod'   => $this->payment_mode,
-                    'document_no'   => $this->confirm_document_no,
-                    'bank_id'       => $this->confirm_bank_id,
-                    'check_no'      => $this->confirm_check_no,
-                    'check_date'    => $this->confirm_check_date,
-                    'amount_paid'   => $this->confirm_paid_amount,
+                    'payment_mod'   => $this->payment_mode          == '' ? NULL : $this->payment_mode,
+                    'document_no'   => $this->confirm_document_no   == '' ? NULL : $this->confirm_document_no,
+                    'bank_id'       => $this->confirm_bank_id       == '' ? NULL : $this->confirm_bank_id,
+                    'check_no'      => $this->confirm_check_no      == '' ? NULL : $this->confirm_check_no,
+                    'check_date'    => $this->confirm_check_date    == '' ? NULL : $this->confirm_check_date,
+                    'amount_paid'   => $this->confirm_paid_amount   == '' ? 0    : $this->confirm_paid_amount,
                     'total_amount'  => $invoice->total_paid_amount,
-                    'balance_return'=> $this->balance_amount,
+                    'balance_return'=> $this->balance_amount        == '' ? 0    : $this->balance_amount,
                     'created_at'    => date("Y-m-d h:i:sa"),
+                ]);
+
+                $receipt->update([
+                    'receipt_no' => date('Y').str_pad(date('m'), 2, '0', STR_PAD_LEFT).str_pad($receipt->id, 5, '0', STR_PAD_LEFT),
                 ]);
             }
             
