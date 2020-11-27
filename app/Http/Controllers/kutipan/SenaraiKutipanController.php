@@ -4,6 +4,8 @@ namespace App\Http\Controllers\kutipan;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Invoice;
+use PDF;
 
 class SenaraiKutipanController extends Controller
 {
@@ -82,4 +84,23 @@ class SenaraiKutipanController extends Controller
     {
         //
     }
+
+    public function senaraiResit(){
+        return view ('pages.kutipan.senarai-resit');
+    }
+
+    public function resitPDF($id){
+        $invoice = Invoice::find($id);
+        $pdf = PDF::loadView('pages.kutipan.resit-PDF', compact('invoice'))->setPaper('A4','portrait');
+        return $pdf->stream();
+        // return view ('pages.kutipan.resit-PDF', compact('invoice'));
+    }
+
+    // public function senaraiTransaksiPDF($duration){
+    //     $invoice = Invoice::find($id);
+    //     $pdf = PDF::loadView('pages.kutipan.senaraiTransaksiPDF', compact('invoice'))->setPaper('A4','portrait');
+    //     return $pdf->stream();
+    //     // return view ('pages.kutipan.resit-PDF', compact('invoice'));
+    // }
+
 }

@@ -79,4 +79,7 @@ Route::resource('CukaiTaksiranTest','\App\Http\Controllers\cukai\CukaiTaksiranCo
 Route::get('CukaiTaksiranPDF','\App\Http\Controllers\cukai\CukaiTaksiranController@cukaiTaksiranPDF');
 Route::resource('SenaraiCukaiTaksiran','\App\Http\Controllers\cukai\SenaraiCukaiTaksiranController');
 
+Route::get('SenaraiResit','\App\Http\Controllers\kutipan\SenaraiKutipanController@senaraiResit')->name('senaraiResit');
+Route::get('resitPDF/{id}','\App\Http\Controllers\kutipan\SenaraiKutipanController@resitPDF')->name('resitPDF');
+Route::get('senaraiTransaksiPDF/{duration}','\App\Http\Controllers\kutipan\SenaraiKutipanController@senaraiTransaksiPDF')->name('senaraiTransaksiPDF');
 });
