@@ -1,9 +1,9 @@
-<div class="bg-white sm:rounded-lg shadow px-3 py-3 mt-3"  x-data="{ active: 0 }">
+<div class="bg-white sm:rounded-lg shadow px-3 py-3 mt-3"  x-data="{ active: 15 }">
     <div class="grid grid-cols-12 gap-1">
         <div class="flex flex-col-reverse col-span-12 lg:col-span-12 xxl:col-span-12 lg:block">
             <div class="bg-white shadow-lg p-4">
                 <div class="flex justify-between">
-                    <x-tab.title name="" livewire="wire:click=chooseCategory('C0')">
+                    <x-tab.title name="0" livewire="wire:click=chooseCategory('C0')">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 ml-2">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                         </svg><span class="tooltip-text bg-blue-500 border rounded border-blue-500 text-white -mt-14">Cukai</span>
