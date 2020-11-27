@@ -77,5 +77,6 @@ Route::get('DownloadResitBil','\App\Http\Controllers\BilPelbagaiController@downl
 
 Route::resource('CukaiTaksiranTest','\App\Http\Controllers\cukai\CukaiTaksiranController');
 Route::get('CukaiTaksiranPDF','\App\Http\Controllers\cukai\CukaiTaksiranController@cukaiTaksiranPDF');
+Route::resource('SenaraiCukaiTaksiran','\App\Http\Controllers\cukai\SenaraiCukaiTaksiranController');
 
 });
