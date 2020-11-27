@@ -91,10 +91,19 @@
                 <div class="bg-white shadow-lg p-2 mt-5">
                     <div class="my-4 flex justify-between">
                         <div class="flex items-center w-full">
-                            <span class="mr-2 -mt-4 text-base text-gray-500">No.Rujukan </span>
-                            <x-form.input livewire="wire:model=search" type="text" label="" value=""/>
+                            <div class="flex">
+                                <span class="mr-2 mt-2 text-base text-gray-500">No.Rujukan </span>
+                                <x-form.input livewire="wire:model=search" type="text" label="" value=""/>
+                                <a href="#" class="mt-3 ml-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-blue-500">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                    </svg>
+                                </a>
+                            </div>
+
                         </div>
-                    </div>
+                        
+                    </div> 
                     <div class="pt-2">
                         <x-general.table>
                             <x-slot name="thead">

@@ -64,7 +64,7 @@
                     <tr class="border">
                         <td class="px-4 py-3" style=" border: 1px solid #ddd;">
                             <div class="flex text-2xl">
-                                <p class="font-semibold font-semibold ">1</p>
+                                <p class="font-semibold ">1</p>
                                 <svg
                                     class="w-8 h-8 ml-5 text-blue-500"
                                     aria-hidden="true"
@@ -102,7 +102,7 @@
                      <tr class="border bg-blue-100 cursor-pointer">
                         <td class="px-4 py-3" style=" border: 1px solid #ddd;">
                             <div class="flex text-2xl">
-                                <p class="font-semibold font-semibold ">2</p>
+                                <p class="font-semibold ">2</p>
                                 <svg
                                     class="w-8 h-8 ml-5 text-blue-500"
                                     aria-hidden="true"
@@ -140,7 +140,7 @@
                     <tr class="border">
                         <td class="px-4 py-3" style=" border: 1px solid #ddd;">
                             <div class="flex text-2xl">
-                                <p class="font-semibold font-semibold ">3</p>
+                                <p class="font-semibold ">3</p>
                                 <svg
                                     class="w-8 h-8 ml-5 text-blue-500"
                                     aria-hidden="true"
@@ -177,7 +177,7 @@
                     <tr class="border">
                         <td class="px-4 py-3" style=" border: 1px solid #ddd;">
                             <div class="flex text-2xl">
-                                <p class="font-semibold font-semibold ">4</p>
+                                <p class="font-semibold ">4</p>
                                 <svg
                                     class="w-8 h-8 ml-5 text-blue-500"
                                     aria-hidden="true"
@@ -215,7 +215,7 @@
                      <tr class="border">
                         <td class="px-4 py-3" style=" border: 1px solid #ddd;">
                             <div class="flex text-2xl">
-                                <p class="font-semibold font-semibold ">5</p>
+                                <p class="font-semibold ">5</p>
                                 <svg
                                     class="w-8 h-8 ml-5 text-blue-500"
                                     aria-hidden="true"
@@ -253,7 +253,7 @@
                     <tr class="border">
                         <td class="px-4 py-3" style=" border: 1px solid #ddd;">
                             <div class="flex text-2xl">
-                                <p class="font-semibold font-semibold ">6</p>
+                                <p class="font-semibold ">6</p>
                                 <svg
                                     class="w-8 h-8 ml-5 text-blue-500"
                                     aria-hidden="true"
@@ -291,7 +291,7 @@
                     <tr class="border">
                         <td class="px-4 py-3" style=" border: 1px solid #ddd;">
                             <div class="flex text-2xl">
-                                <p class="font-semibold font-semibold ">7</p>
+                                <p class="font-semibold ">7</p>
                                 <svg
                                     class="w-8 h-8 ml-5 text-blue-500"
                                     aria-hidden="true"
