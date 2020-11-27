@@ -76,93 +76,18 @@
         </div>
 
         <div style="background-color: black; padding:6px; margin-top:20px;">
-            <h1 class="titlestyle">TRANSAKSI {{ strtoupper($invoice->business_type) }}</h1>
+            <h1 class="titlestyle">TRANSAKSI (SEMUA)</h1>
         </div>
 
         <div style="margin-top:20px">
             <table style="width: 100%;">
                 <tbody>
                     <tr>
-                        <td class="tdstyle">Nama Pemilik</td>
-                        <td class="tdstyle">{{ strtoupper($invoice->customer_name) }}</td>
-
-                        <td class="tdstyle">No Rujukan</td>
-                        <td class="tdstyle">{{ strtoupper($invoice->bil_no) }}</td>
-                    </tr>
-
-                    <tr>
-                        <td class="tdstyle">No.Akaun</td>
-                        <td class="tdstyle">{{ strtoupper($invoice->account_no) }}</td>
-
-                        <td class="tdstyle">Status Harta</td>
-                        <td class="tdstyle">NORMAL</td>
-                    </tr>
-
-                    <tr>
-                        <td class="tdstyle">Alamat Surat Menyurat</td>
-                        <td class="tdstyle">
-                            {{ isset($invoice->customer_address1) ? strtoupper($invoice->customer_address1).', ' : '' }}
-                            {{ isset($invoice->customer_address2) ? strtoupper($invoice->customer_address2).', ' : '' }}
-                            {{ isset($invoice->customer_address3) ? strtoupper($invoice->customer_address3).', ' : '' }}
-                            {{ isset($invoice->customer_postcode) ? strtoupper($invoice->customer_postcode).' ' : '' }}
-                            {{ isset($invoice->customer_town) ? strtoupper($invoice->customer_town).', ' : '' }}
-                            {{ isset($invoice->customer_state) ? strtoupper($invoice->customer_state) : '' }}
-                        </td>
-
-                        <td class="tdstyle">Alamat Harta</td>
-                        <td class="tdstyle">
-                            {{ isset($invoice->company_address1) ? strtoupper($invoice->company_address1).', ' : '' }}
-                            {{ isset($invoice->company_address2) ? strtoupper($invoice->company_address2).', ' : '' }}
-                            {{ isset($invoice->company_address3) ? strtoupper($invoice->company_address3).', ' : '' }}
-                            {{ isset($invoice->company_postcode) ? strtoupper($invoice->company_postcode).' ' : '' }}
-                            {{ isset($invoice->company_town) ? strtoupper($invoice->company_town).', ' : '' }}
-                            {{ isset($invoice->company_state) ? strtoupper($invoice->company_state) : '' }}
-                        </td>
-                    </tr>
-
-                    {{-- <tr>
-                        <td class="tdstyle">Nilai Tahunan</td>
-                        <td class="tdstyle">{{ strtoupper($invoice->customer_name) }}</td>
-
-                        <td class="tdstyle">Kegunaan Tanah</td>
-                        <td class="tdstyle">PERNIAGAAN</td>
-                    </tr> --}}
-
-                    <tr>
-                        <td class="tdstyle">Kadar</td>
-                        <td class="tdstyle">10.00%</td>
-
-                        <td class="tdstyle">Kategori Harta</td>
-                        <td class="tdstyle">BANGUNAN</td>
-                    </tr>
-
-                    {{-- <tr>
-                        <td class="tdstyle">Cukai Tahunan</td>
-                        <td class="tdstyle">210.00</td>
-
-                        <td class="tdstyle">Jenis Bangunan</td>
-                        <td class="tdstyle">KILANG BERKEMBAR 1 TINGKAT</td>
-                    </tr> --}}
-
-                    <tr>
-                        <td class="tdstyle">Daerah</td>
-                        <td class="tdstyle"></td>
-
-                        <td class="tdstyle">Mukim</td>
-                        <td class="tdstyle">{{ strtoupper($invoice->mukim) }}</td>
-                    </tr>
-
-                    <tr>
-                        <td class="tdstyle">No.Lot/PT</td>
-                        <td class="tdstyle">{{ strtoupper($invoice->lot_no) }}</td>
-
-                        <td class="tdstyle">No.Hakmilik</td>
-                        <td class="tdstyle">{{ strtoupper($invoice->ownership_no) }}</td>
-                    </tr>
-
-                    <tr>
                         <td class="tdstyle">Pengguna Cetak</td>
                         <td class="tdstyle">{{ strtoupper(auth()->user()->name) }}</td>
+
+                        <td class="tdstyle">Jumlah Keseluruhan Transaksi</td>
+                        <td class="tdstyle">RM {{ number_format(array_sum(array_column($details, 'amount')), 2) }}</td>
 
                         <td class="tdstyle">Tarikh Cetakan</td>
                         <td class="tdstyle">{{ date('d/m/Y') }}</td>
@@ -177,17 +102,25 @@
             <table id="table" style="width: 100%;">
                 <thead>
                     <tr>
-                        <th style='text-align:center'>Tarikh</th>
+                        <th style='text-align:center'>No. Resit</th>
+                        <th style='text-align:center'>Tarikh Resit</th>
+                        <th style='text-align:center'>No. Bil</th>
+                        <th style='text-align:center'>Tarikh Bil </th>
+                        <th style='text-align:center'>Urusniaga</th>
                         <th style='text-align:center'>Kod Hasil</th>
-                        <th style='text-align:center'>Status Kompaun</th>
-                        <th style='text-align:center'>No. Plat </th>
-                        <th style='text-align:right'>Amaun</th>
+                        <th style='text-align:center'>Kompaun Status</th>
+                        <th style='text-align:center'>No. Plat</th>
+                        <th style='text-align:right'>Amaun (RM)</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse ($invoice->detail as $detail)
+                    @forelse ($details as $detail)
                     <tr>
-                        <td style='padding: 5px; text-align: center;font-size: 14px;'>{{ date('d/m/Y', strtotime($invoice->bil_date)) }}</td>
+                        <td style='padding: 5px; text-align: center;font-size: 14px;'>{{ strtoupper($detail->receipt_no) }}</td>
+                        <td style='padding: 5px; text-align: center;font-size: 14px;'>{{ date('d/m/Y', strtotime($detail->created_at)) }}</td>
+                        <td style='padding: 5px; text-align: center;font-size: 14px;'>{{ strtoupper($detail->bil_no) }}</td>
+                        <td style='padding: 5px; text-align: center;font-size: 14px;'>{{ date('d/m/Y', strtotime($detail->bil_date)) }}</td>
+                        <td style='padding: 5px; text-align: center;font-size: 14px;'>{{ strtoupper($detail->business_type) }}</td>
                         <td style='padding: 5px; text-align: center;font-size: 14px;'>{{ strtoupper($detail->hasil_code) }}</td>
                         <td style='padding: 5px; text-align: center;font-size: 14px;'>{{ strtoupper($detail->compound_status) }}</td>
                         <td style='padding: 5px; text-align: center;font-size: 14px;'>{{ strtoupper($detail->plate_no) }}</td>
