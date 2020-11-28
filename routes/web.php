@@ -91,12 +91,12 @@ Route::get('CukaiTaksiranPDF','\App\Http\Controllers\cukai\CukaiTaksiranControll
 Route::resource('SenaraiCukaiTaksiran','\App\Http\Controllers\cukai\SenaraiCukaiTaksiranController');
 
 Route::resource('TaxinvoiceTest','\App\Http\Controllers\cukai\TaxInvoiceController');
-Route::get('TaxinvoicePDF','\App\Http\Controllers\cukai\TaxInvoiceController@taxInvoice');
+Route::get('TaxinvoicePDF/{id}','\App\Http\Controllers\cukai\TaxInvoiceController@taxInvoice')->name('taxInvoice');
 
 Route::get('SenaraiResit','\App\Http\Controllers\kutipan\SenaraiKutipanController@senaraiResit')->name('senaraiResit');
 Route::get('resitPDF/{id}','\App\Http\Controllers\kutipan\SenaraiKutipanController@resitPDF')->name('resitPDF');
 Route::get('senaraiTransaksiPDF/{duration}','\App\Http\Controllers\kutipan\SenaraiKutipanController@senaraiTransaksiPDF')->name('senaraiTransaksiPDF');
 
 Route::resource('Report','\App\Http\Controllers\report\ReportController');
-Route::get('Projection','\App\Http\Controllers\report\ReportController@projection');
+Route::get('Projection','\App\Http\Controllers\report\ReportController@projection')->name('projection');
 });
