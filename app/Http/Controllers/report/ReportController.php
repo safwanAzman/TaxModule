@@ -82,4 +82,8 @@ class ReportController extends Controller
     {
         //
     }
+
+    public function projection(){
+        return view('pages.report.projection');
+    }
 }

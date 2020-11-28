@@ -94,7 +94,7 @@
                             <div class="flex">
                                 <span class="mr-2 mt-2 text-base text-gray-500">No.Rujukan </span>
                                 <x-form.input livewire="wire:model=search" type="text" label="" value=""/>
-                                <a href="#" class="mt-3 ml-2">
+                                <a href="#" class="mt-3 ml-2" wire:click="refresh()">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-blue-500">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                                     </svg>
@@ -280,22 +280,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- <div class="w-full ">
-                            <table class="w-full whitespace-no-wrap">
-                                <thead >
-                                    <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
-                                        <th class="px-4 py-3">Mod Bayaran</th>
-                                        <th class="px-4 py-3">Amaun</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
-                                    <tr class="border">
-                                        <td class="px-4 py-3"></td>
-                                        <td class="px-4 py-3"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div> --}}
+                        
                     </div>
                 </div>  
             </div>
@@ -309,7 +294,7 @@
                             <div class="flex justify-between">
                                 <h1 class="text-white text-base font-semibold">Terimaan Semasa : <span class="font-semibold">{{ number_format($confirm_paid_amount, 2) }}</span></h1>
 
-                                <button class="bg-white hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex cursor-pointer" style="width: 150px;" wire:click="payment()">
+                                <button class="bg-white hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex cursor-pointer" style="width: 150px;" onclick="payment_process()">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 text-blue-500 mr-2">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                                     </svg>
@@ -340,7 +325,64 @@
                 </div>
             </div>
             {{-- End Payment --}}
-        </div> 
+        </div>
+
+        <!-- Start Table Taksiran -->
+        @if( isset($transaction_details) )
+        <div class="col-span-12 lg:col-span-12 xxl:col-span-12 mt-5">
+            <div class="flex justify-between mb-3">
+                <div class="text-blue-500 font-semibold text-lg ">
+                    <h1>Maklumat Terakhir Transaksi</h1>
+                </div>
+            </div>
+            <x-general.table>
+                <x-slot name="thead">
+                    <x-general.table-header class="text-center bg-green-100" value="Bil" sort="" livewire="" />
+                    <x-general.table-header class="text-center bg-green-100" value="No Resit" sort="" livewire="" />
+                    <x-general.table-header class="text-center bg-green-100" value="Tarikh Bil" sort="" livewire="" />
+                    <x-general.table-header class="text-center bg-green-100" value="No Rujukan" sort="" livewire="" />
+                    <x-general.table-header class="text-center bg-green-100" value="Urusniaga" sort="" livewire="" />
+                    <x-general.table-header class="text-right bg-green-100" value="Amaun Bayar" sort="" livewire="" />
+                    <x-general.table-header class="text-center bg-green-100" value="Tindakan" sort="" livewire="" />
+                </x-slot>
+                <x-slot name="tbody">
+                    @forelse ($transaction_details as $detail)
+                    <tr>
+                        <x-general.table-body colspan="" class="text-sm text-center text-gray-500 uppercase">
+                            <p>{{ $loop->iteration }}.</p>
+                        </x-general.table-body>
+                        <x-general.table-body colspan="" class="text-sm text-center text-gray-500 uppercase">
+                            <p>{{ $detail->receipt_no }}</p>
+                        </x-general.table-body>
+                        <x-general.table-body colspan="" class="text-sm text-center text-gray-500 uppercase">
+                            <p>{{ date('d/m/Y', strtotime($detail->invoice->bil_date)) }}</p>
+                        </x-general.table-body>
+                        <x-general.table-body colspan="" class="text-sm text-center text-gray-500 uppercase">
+                            <p>{{ $detail->invoice->bil_no }}</p>
+                        </x-general.table-body>
+                        <x-general.table-body colspan="" class="text-sm text-center text-gray-500 uppercase">
+                            <p>{{ $detail->invoice->business_type }}</p>
+                        </x-general.table-body>
+                        <x-general.table-body colspan="" class="text-sm text-right text-gray-500 uppercase">
+                            <p>{{ number_format($detail->invoice->total_paid_amount, 2) }}</p>
+                        </x-general.table-body>
+                        <x-general.table-body colspan="" class="text-sm text-center text-gray-500 uppercase">
+                            <div class="flex justify-center">
+                                <a class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-2 rounded-full flex cursor-pointer" target="blank" href="{{ route('resitPDF',['id' => $detail->invoice->id]) }}">
+                                    <svg xmlns="" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 text-white text-center">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </x-general.table-body>
+                    </tr>
+                    @empty @endforelse
+                </x-slot>
+            </x-general.table>
+        </div>
+        @endif
+        <!-- End Table Taksiran -->
 
         {{-- Start Bil Footer --}}
         <div class="col-span-12 lg:col-span-12 xxl:col-span-12">
@@ -356,3 +398,24 @@
         {{-- End Bil Footer --}}
     </div>
 </div>
+
+<script>
+    function payment_process(){
+        Swal.fire({
+            title: 'Teruskan Transaksi?',
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: `Ya`,
+            denyButtonText: `Tidak`,
+            }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                @this.payment()
+            } else if (result.isDenied) {
+                Swal.fire('Changes are not saved', '', 'info')
+            }
+        })
+    }
+
+    window.addEventListener('swal',function(e){Swal.fire(e.detail);});
+</script>
