@@ -4,6 +4,7 @@ namespace App\Http\Controllers\cukai;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Receipt;
 use PDF;
 
 class TaxInvoiceController extends Controller
@@ -15,12 +16,12 @@ class TaxInvoiceController extends Controller
      */
     public function index()
     {
-       return view ('pages.cukai.tax-invoice');
+        return view ('pages.cukai.tax-invoice');
     }
 
-     public function taxInvoice(){
-        $pdf = PDF::loadView('pages.cukai.tax-invoice')->setPaper('A4','portrait');
-        
+    public function taxInvoice($id){
+        $receipt = Receipt::where('id',$id)->first();
+        $pdf = PDF::loadView('pages.cukai.tax-invoice', compact('receipt'))->setPaper('A4','portrait');
         return $pdf->stream();
     }
 
