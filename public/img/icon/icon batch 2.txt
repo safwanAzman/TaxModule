@@ -1,0 +1,55 @@
+Penilaian
+-Batch Harta Baru
+-Senarai Batch Harta
+-Penilaian Semula
+-Selenggara Kod Jalan
+-Pindaan Nilaian
+-Senarai Bantahan
+-Pembetulan Nilaian (Bantahan)
+-Senarai Harta
+-Lulus Pindah
+-Lulus
+
+Cukai Taksiran
+-Senarai Harta
+-Proses Bil Cukai
+-Proses Notis Cukai
+-Proses Waran Cukai
+-Senarai Waran
+-Lulus Pindah Milik
+-Batch Jernal
+-Data File Peringatan
+-Laporan
+-Lulus
+
+Remisi
+
+Lesen
+
+Sewa
+-Senarai Akaun
+
+Tempahan
+-Tempah Gelanggang
+-Senarai Tempahan
+
+Kompaun
+
+Cagaran
+
+Bil Pelbagai
+-Senarai Bil Pelbagai
+
+Kutipan
+-Senarai Kutipan
+-Senarai Transaksi
+
+Pemborong
+
+Belanjawan
+
+Perolehan
+
+Pembayaran
+
+Lejar Am
