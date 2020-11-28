@@ -72,7 +72,7 @@
                                                 <x-form.input  type="date" label="Tarikh Cek" value="" livewire="wire:model=check_date"/>
                                             </div>
                                             <div class="grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
-                                                <x-form.input  label="Jumlah" value="" livewire="wire:model=paid_amount"/>
+                                                <x-form.input  label="Amaun (RM)" value="" livewire="wire:model=paid_amount"/>
                                             </div>
                                         </x-slot>
                                         <div class="flex justify-center mt-5">

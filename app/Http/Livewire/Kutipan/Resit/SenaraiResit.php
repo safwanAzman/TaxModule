@@ -16,6 +16,7 @@ class SenaraiResit extends Component
         return view('livewire.kutipan.resit.senarai-resit',[
             'transactions'  => Receipt::selectRaw("receipt_group,min(receipt_no) as min,max(receipt_no) as max,payment_mod,amount_paid,sum(total_amount) as total,balance_return")
                             -> whereRaw("DATEDIFF(D,created_at,GETDATE()) <= $this->search_date")
+                            -> whereRaw("DATEDIFF(D,created_at,GETDATE()) >= 0")
                             -> groupBy('receipt_group','payment_mod','amount_paid','balance_return')
                             -> orderBy('receipt_group', 'desc')
                             -> paginate(5),

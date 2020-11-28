@@ -83,6 +83,10 @@ class ReportController extends Controller
         //
     }
 
+    public function belanjawan(){
+        return view('pages.report.belanjawan');
+    }
+
     public function projection(){
         return view('pages.report.projection');
     }

@@ -98,5 +98,6 @@ Route::get('resitPDF/{id}','\App\Http\Controllers\kutipan\SenaraiKutipanControll
 Route::get('senaraiTransaksiPDF/{duration}','\App\Http\Controllers\kutipan\SenaraiKutipanController@senaraiTransaksiPDF')->name('senaraiTransaksiPDF');
 
 Route::resource('Report','\App\Http\Controllers\report\ReportController');
+Route::get('Belanjawan','\App\Http\Controllers\report\ReportController@belanjawan')->name('belanjawan');
 Route::get('Projection','\App\Http\Controllers\report\ReportController@projection')->name('projection');
 });

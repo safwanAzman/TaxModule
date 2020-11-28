@@ -4,7 +4,7 @@
 
 <div class="my-4 flex justify-between">
     <div class="flex items-center w-full">
-        <span class="mr-2 -mt-4 text-base text-gray-500">No.Rujukan </span>
+        <span class="mr-2 -mt-4 text-base text-gray-500">No. Rujukan </span>
         <x-form.input livewire="" label="" value=""/>
     </div>
 </div> 
@@ -13,7 +13,7 @@
     <x-general.table>
         <x-slot name="thead">
             <x-general.table-header class="text-left" value="Urusniaga" sort="" livewire=""/>
-            <x-general.table-header class="text-left" value="No.Rujukan" sort="" livewire=""/>
+            <x-general.table-header class="text-left" value="No. Rujukan" sort="" livewire=""/>
             <x-general.table-header class="text-left" value="Jumlah Bil" sort="" livewire=""/>
             <x-general.table-header class="text-left" value="Amaun Bayar" sort="" livewire=""/>
             <x-general.table-header class="text-center" value="Tindakan" sort="" livewire=""/>  
