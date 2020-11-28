@@ -18,160 +18,108 @@
             <div class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100 bg-blue-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
               href="#" onclick="test()">
               <div class="flex items-center">
-                <span>Halaman Utama</span>
+                <span>Cukai Taksiran</span>
               </div>
             </div>
             <div class="grid gap-20 lg:grid-cols-6 sm:grid-cols-6">
               
-                <!-- penilaian  -->
-                  <a href="{{route('Penilaian.index')}}" class="h-32 w-32 relative cursor-pointer mb-5">
+                <!-- Senarai Harta -->
+                  <a href="{{route('SenaraiHartaCukai.index')}}" class="h-32 w-32 relative cursor-pointer mb-5">
                     <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
+                         <img class="h-32 w-32" src="{{ asset('img/icon/senarai harta.png') }}">
+                      </div>
+                    </div>
+                  </a>
+
+                   <!-- Proses Bil Cukai -->
+                  <a href="{{route('ProsesBilCukai.index')}}" class="h-32 w-32 relative cursor-pointer mb-5">
+                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
+                      <div class="h-full w-full">
+                         <img class="h-32 w-32" src="{{ asset('img/icon/proses bil cukai.png') }}">
+                      </div>
+                    </div>
+                  </a>
+
+                   <!-- Proses Notis Cukai -->
+                  <a href="#" class="h-32 w-32 relative cursor-pointer mb-5 tooltip">
+                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
+                      <div class="h-full w-full">
+                        <span class="tooltip-text  text-black text-xs font-semibold">In Progress</span>
                          <img class="h-32 w-32" src="{{ asset('img/icon/batch harta baru.png') }}">
                       </div>
                     </div>
                   </a>
 
-                  <!-- Cukai Taksiran -->
-                  <a href="{{route('Cukai-Taksiran.index')}}" class="h-32 w-32 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
-                      <div class="h-full w-full">
-                        <img class="h-32 w-32" src="{{ asset('img/icon/senarai harta.png') }}">
-                      </div>
-                    </div>
-                  </a>
-
-                  <!-- Sewa -->
-                  <a href="{{route('Sewa.index')}}" class="h-32 w-32 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
-                      <div class="h-full w-full">
-                        <img class="h-32 w-32" src="{{ asset('img/icon/tempahan gelanggang.png') }}">
-                      </div>
-                    </div>
-                  </a>
-
-                  
-                  <!--Tempahan -->
-                  <a href="{{route('Tempahan.index')}}" class="h-32 w-32 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
-                      <div class="h-full w-full ">
-                        <img class="h-32 w-32" src="{{ asset('img/icon/senarai tempahan.png') }}">
-                      </div>
-                    </div>
-                  </a>
-
-                  <!--Bil Pelbagai -->
-                  <a href="{{route('BilPelbagai.index')}}" class="h-32 w-32 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
-                      <div class="h-full w-full ">
-                        <img class="h-32 w-32" src="{{ asset('img/icon/bil pelbagai.png') }}">
-                      </div>
-                    </div>
-                  </a>
-
-                   <!--Kutipan -->
-                  <a href="{{route('Kutipan.index')}}" class="h-32 w-32 relative cursor-pointer mb-5">
-                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
-                      <div class="h-full w-full ">
-                        <img class="h-32 w-32" src="{{ asset('img/icon/kutipan.png') }}">
-                      </div>
-                    </div>
-                  </a>
-
-                  <!-- Remisi -->
+                   <!-- Proses Waran Cukai -->
                   <a href="#" class="h-32 w-32 relative cursor-pointer mb-5 tooltip">
                     <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <span class="tooltip-text  text-black text-xs font-semibold">In Progress</span>
-                        <img class="h-32 w-32" src="{{ asset('img/icon/proses bil cukai.png') }}">
+                         <img class="h-32 w-32" src="{{ asset('img/icon/batch harta baru.png') }}">
                       </div>
                     </div>
                   </a>
 
-                   <!-- Lesen -->
-                  <a href="#" class="h-32 w-32 relative cursor-pointer mb-5 tooltip">
-                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
-                      <div class="h-full w-full">
-                         <span class="tooltip-text  text-black text-xs font-semibold">In Progress</span>
-                        <img class="h-32 w-32" src="{{ asset('img/icon/senarai akaun.png') }}">
-                      </div>
-                    </div>
-                  </a>
-
-                
-
-                  <!-- Kompaun -->
+                   <!-- Senarai Waran -->
                   <a href="#" class="h-32 w-32 relative cursor-pointer mb-5 tooltip">
                     <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <span class="tooltip-text  text-black text-xs font-semibold">In Progress</span>
-                        <img class="h-32 w-32" src="{{ asset('img/icon/kutipan.png') }}">
+                         <img class="h-32 w-32" src="{{ asset('img/icon/batch harta baru.png') }}">
                       </div>
                     </div>
                   </a>
 
-                  <!-- Cagaran -->
+                   <!-- Lulus Pindah Milik -->
                   <a href="#" class="h-32 w-32 relative cursor-pointer mb-5 tooltip">
                     <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <span class="tooltip-text  text-black text-xs font-semibold">In Progress</span>
-                        <img class="h-32 w-32" src="{{ asset('img/icon/bil pelbagai.png') }}">
+                         <img class="h-32 w-32" src="{{ asset('img/icon/batch harta baru.png') }}">
                       </div>
                     </div>
                   </a>
 
-
-                   <!-- Pemborong-->
+                   <!-- batch Jernal-->
                   <a href="#" class="h-32 w-32 relative cursor-pointer mb-5 tooltip">
                     <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <span class="tooltip-text  text-black text-xs font-semibold">In Progress</span>
-                        <img class="h-32 w-32" src="{{ asset('img/icon/bil pelbagai.png') }}">
+                         <img class="h-32 w-32" src="{{ asset('img/icon/batch harta baru.png') }}">
                       </div>
                     </div>
                   </a>
 
-                  <!-- Belanjawan-->
+                   <!-- Data File peringatan -->
                   <a href="#" class="h-32 w-32 relative cursor-pointer mb-5 tooltip">
                     <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <span class="tooltip-text  text-black text-xs font-semibold">In Progress</span>
-                        <img class="h-32 w-32" src="{{ asset('img/icon/bil pelbagai.png') }}">
+                         <img class="h-32 w-32" src="{{ asset('img/icon/batch harta baru.png') }}">
                       </div>
                     </div>
                   </a>
 
-                  <!-- Perolehan-->
+                   <!-- Laporan -->
                   <a href="#" class="h-32 w-32 relative cursor-pointer mb-5 tooltip">
                     <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <span class="tooltip-text  text-black text-xs font-semibold">In Progress</span>
-                        <img class="h-32 w-32" src="{{ asset('img/icon/bil pelbagai.png') }}">
+                         <img class="h-32 w-32" src="{{ asset('img/icon/batch harta baru.png') }}">
                       </div>
                     </div>
                   </a>
 
-                  <!-- Pembayaran-->
+                   <!-- Lulus -->
                   <a href="#" class="h-32 w-32 relative cursor-pointer mb-5 tooltip">
                     <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
                       <div class="h-full w-full">
                         <span class="tooltip-text  text-black text-xs font-semibold">In Progress</span>
-                        <img class="h-32 w-32" src="{{ asset('img/icon/bil pelbagai.png') }}">
+                         <img class="h-32 w-32" src="{{ asset('img/icon/batch harta baru.png') }}">
                       </div>
                     </div>
                   </a>
-
-                   <!-- Lanjar Am-->
-                  <a href="#" class="h-32 w-32 relative cursor-pointer mb-5 tooltip">
-                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
-                      <div class="h-full w-full">
-                        <span class="tooltip-text  text-black text-xs font-semibold">In Progress</span>
-                        <img class="h-32 w-32" src="{{ asset('img/icon/bil pelbagai.png') }}">
-                      </div>
-                    </div>
-                  </a>
-
-
             </div>
         </div>
     </div>
