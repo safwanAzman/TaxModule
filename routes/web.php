@@ -85,4 +85,6 @@ Route::get('TaxinvoicePDF','\App\Http\Controllers\cukai\TaxInvoiceController@tax
 Route::get('SenaraiResit','\App\Http\Controllers\kutipan\SenaraiKutipanController@senaraiResit')->name('senaraiResit');
 Route::get('resitPDF/{id}','\App\Http\Controllers\kutipan\SenaraiKutipanController@resitPDF')->name('resitPDF');
 Route::get('senaraiTransaksiPDF/{duration}','\App\Http\Controllers\kutipan\SenaraiKutipanController@senaraiTransaksiPDF')->name('senaraiTransaksiPDF');
+
+Route::resource('Report','\App\Http\Controllers\report\ReportController');
 });
