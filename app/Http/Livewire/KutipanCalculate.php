@@ -45,6 +45,7 @@ class KutipanCalculate extends Component
 
     public function chooseCategory($category = ''){
         $this->search = $category;
+        $this->invoice_show         = NULL;
     }
 
     public function showInvoice($invoice_id = ''){
@@ -160,6 +161,7 @@ class KutipanCalculate extends Component
         $this->check_date           = NULL;
         $this->paid_amount          = 0.00;
         $this->receipt_group        = 0;
-        $this->transaction_details  = NULL; 
+        $this->transaction_details  = NULL;
+        $this->invoice_show         = NULL;
     }
 }

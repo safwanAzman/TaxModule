@@ -1,6 +1,6 @@
 <div x-data="{ modalOpen4: false}">
     <button class="bg-white hover:bg-grey text-blue-500-darkest font-semibold py-1 px-4 rounded flex ml-2 transition duration-150" @click="modalOpen4 = true" wire:click="setPaymentMode('MO/PO')">
-        <span class="text-blue-500 text-xs">MO/PO</span>
+        <span class="text-blue-500 text-xs">Wang Pos</span>
     </button>
 <div x-show="modalOpen4" style="display: none;"
         class="fixed inset-0 z-40 overflow-y-auto">
@@ -35,7 +35,7 @@
                     <div class="">
                         <div class="flex items-center justify-between p-4  text-md font-semibold text-teal-100 bg-blue-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-teal">
                             <h3 class="text-lg font-semibold leading-6 text-white" id="modal-headline">
-                                Pembayaran Secara MO/PO
+                                Pembayaran Secara Wang Pos
                             </h3>
                             
                             <div>
@@ -61,11 +61,11 @@
                                    <x-form.basic-form action="">
                                         <x-slot name="content">
                                             <div class="grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
-                                                <x-form.input  label="Postal Order Number" value="" livewire="wire:model=check_no"/>
-                                                <x-form.input  type="date" label="Postal Order Date" value="" livewire="wire:model=check_date"/>
+                                                <x-form.input  label="No Wang Pos" value="" livewire="wire:model=check_no"/>
+                                                <x-form.input  type="date" label="Tarikh Wang Pos" value="" livewire="wire:model=check_date"/>
                                             </div>
                                             <div class="grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
-                                                <x-form.input  label="Jumlah" value="" livewire="wire:model=paid_amount"/>
+                                                <x-form.input  label="Amaun (RM)" value="" livewire="wire:model=paid_amount"/>
                                             </div>
                                         </x-slot>
                                         <div class="flex justify-center mt-5">

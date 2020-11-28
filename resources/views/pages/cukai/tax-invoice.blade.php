@@ -104,7 +104,7 @@
             <table style="width: 100%;">
                 <tbody>
                     <tr>
-                        <td class="tdstyle">Tamat Lesen : <span style="font-weight: bold">01/11/2021</span></td>
+                        <td class="tdstyle">Tamat Lesen : <span style="font-weight: bold">01/12/2021</span></td>
                         <td style='text-align:right;font-size: 11px; font-family: Arial, Helvetica, sans-serif;'>Muka/s 1/1
                             :</td>
                     </tr>
@@ -158,7 +158,7 @@
                 </tbody>
             </table>
         </div>
-        <br><br><br><br><br><br>
+        <br>
         <div style="margin-top:20px">
             <table style="width: 100%;">
                 <tbody>
@@ -213,7 +213,7 @@
             <table style="width: 100%;">
                 <tbody>
                     <tr>
-                        <td class="tdstyle">Tamat Lesen : <span style="font-weight: bold">01/11/2021</span></td>
+                        <td class="tdstyle">Tamat Lesen : <span style="font-weight: bold">01/12/2021</span></td>
                         <td style='text-align:right;font-size: 11px; font-family: Arial, Helvetica, sans-serif;'>Muka/s 1/1
                             :</td>
                     </tr>

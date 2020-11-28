@@ -261,7 +261,7 @@
                         <x-form.input label="No.Bil Lama" value="" livewire=""/>
                         <x-form.input label="Amaun Bayaran" value="122.00" livewire=""/>
                         <x-form.input label="Tarikh Bayaran" value="25/11/2014" livewire=""/>
-                        <x-form.input label="No.Resit" value="424408" livewire=""/>
+                        <x-form.input label="No. Resit" value="424408" livewire=""/>
                         <x-form.input label="No.Mesin" value="14" livewire=""/>
                         <x-form.input label="ID Cagaran" value="" livewire=""/>
                     </div>

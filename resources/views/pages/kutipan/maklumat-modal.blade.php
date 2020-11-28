@@ -65,7 +65,7 @@
                                         <x-slot name="content">
                                             <div class="grid gap-5 lg:grid-cols-2 sm:grid-cols-2 mt-4">
                                                 <x-form.input label="Urusniaga" value="Cukai" livewire=""/>
-                                                <x-form.input label="No.Rujukan" value="C0020000014" livewire=""/>
+                                                <x-form.input label="No. Rujukan" value="C0020000014" livewire=""/>
                                                 <x-form.input label="Nama" value="Ali" livewire=""/>
                                                 <x-form.input label="No.IC" value="70121915163" livewire=""/>
                                             </div>

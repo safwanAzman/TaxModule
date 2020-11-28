@@ -104,7 +104,7 @@
                     <div class="my-4 flex justify-between">
                         <div class="flex items-center w-full">
                             <div class="flex">
-                                <span class="mr-2 mt-2 text-base text-gray-500">No.Rujukan </span>
+                                <span class="mr-2 mt-2 text-base text-gray-500">No. Rujukan </span>
                                 <x-form.input livewire="wire:model=search" type="text" label="" value=""/>
                                 <a href="#" class="mt-3 ml-2" wire:click="refresh()">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-blue-500">
@@ -120,9 +120,9 @@
                         <x-general.table>
                             <x-slot name="thead">
                                 <x-general.table-header class="text-left" value="Urusniaga" sort="" livewire=""/>
-                                <x-general.table-header class="text-left" value="No.Rujukan" sort="" livewire=""/>
-                                <x-general.table-header class="text-left" value="Jumlah Bil" sort="" livewire=""/>
-                                <x-general.table-header class="text-left" value="Amaun Bayar" sort="" livewire=""/>
+                                <x-general.table-header class="text-left" value="No. Rujukan" sort="" livewire=""/>
+                                <x-general.table-header class="text-right" value="Jumlah Bil" sort="" livewire=""/>
+                                <x-general.table-header class="text-right" value="Amaun Bayar" sort="" livewire=""/>
                                 <x-general.table-header class="text-center" value="Tindakan" sort="" livewire=""/>  
                             </x-slot>
                             <x-slot name="tbody">
@@ -134,10 +134,10 @@
                                     <x-general.table-body colspan="" class="text-sm text-gray-500 uppercase">
                                         <p>{{ $item1->bil_no }}</p>
                                     </x-general.table-body>
-                                    <x-general.table-body colspan="" class="text-sm text-gray-500 uppercase">
+                                    <x-general.table-body colspan="" class="text-sm text-right text-gray-500 uppercase">
                                         <p>{{ number_format($item1->total_bil_amount, 2) }}</p>
                                     </x-general.table-body>
-                                    <x-general.table-body colspan="" class="text-sm text-gray-500 uppercase">
+                                    <x-general.table-body colspan="" class="text-sm text-right text-gray-500 uppercase">
                                         <p>{{ number_format($item1->total_paid_amount, 2) }}</p>
                                     </x-general.table-body> 
 
@@ -168,10 +168,10 @@
                                     <x-general.table-body colspan="" class="text-sm text-gray-500 uppercase">
                                         <p>{{ $item2->bil_no }}</p>
                                     </x-general.table-body>
-                                    <x-general.table-body colspan="" class="text-sm text-gray-500 uppercase">
+                                    <x-general.table-body colspan="" class="text-sm text-right text-gray-500 uppercase">
                                         <p>{{ number_format($item2->total_bil_amount, 2) }}</p>
                                     </x-general.table-body>
-                                    <x-general.table-body colspan="" class="text-sm text-gray-500 uppercase">
+                                    <x-general.table-body colspan="" class="text-sm text-right text-gray-500 uppercase">
                                         <p>{{ number_format($item2->total_paid_amount, 2) }}</p>
                                     </x-general.table-body> 
 
@@ -234,9 +234,9 @@
                     <x-general.table>
                         <x-slot name="thead">
                             <x-general.table-header class="text-left" value="Kod Hasil" sort="" livewire=""/>
-                            <x-general.table-header class="text-left" value="Status Kompaun" sort="" livewire=""/>
-                            <x-general.table-header class="text-left" value="No.Plat" sort="" livewire=""/>
-                            <x-general.table-header class="text-left" value="Amaun (RM)" sort="" livewire=""/> 
+                            <x-general.table-header class="text-left" value="Keterangan Transaksi" sort="" livewire=""/>
+                            <x-general.table-header class="text-left" value="" sort="" livewire=""/>
+                            <x-general.table-header class="text-right" value="Amaun (RM)" sort="" livewire=""/> 
                         </x-slot>
                         <x-slot name="tbody">
                             @forelse ($invoice_show->detail as $item3)
@@ -248,16 +248,16 @@
                                     <p>{{ $item3->compound_status }}</p>
                                 </x-general.table-body>
                                 <x-general.table-body colspan="" class="text-sm text-gray-500 uppercase">
-                                    <p>{{ $item3->plate_no }}</p>
+                                    <p></p>
                                 </x-general.table-body>
-                                <x-general.table-body colspan="" class="text-sm text-gray-500 uppercase">
+                                <x-general.table-body colspan="" class="text-sm text-right text-gray-500 uppercase">
                                     <p>{{ number_format($item3->amount, 2) }}</p>
                                 </x-general.table-body> 
                             </tr> 
                             @empty @endforelse
                             <tr class="bg-orange-100">
                             <x-general.table-body colspan="3" class="text-sm text-gray-500 uppercase"></x-general.table-body>
-                                <x-general.table-body colspan="" class="text-sm text-gray-500 uppercase">
+                                <x-general.table-body colspan="" class="text-sm text-right text-gray-500 uppercase">
                                     <p class="font-semibold">Jumlah (RM) {{ number_format($invoice_show->total_paid_amount, 2) }}</p>
                                 </x-general.table-body> 
                             </tr> 
@@ -306,7 +306,7 @@
                             <div class="flex justify-between">
                                 <h1 class="text-white text-base font-semibold">Terimaan Semasa : <span class="font-semibold">{{ number_format($confirm_paid_amount, 2) }}</span></h1>
 
-                                <button class="bg-white hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex cursor-pointer" style="width: 150px;" onclick="payment_process()">
+                                <button class="bg-white hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex cursor-pointer" onclick="payment_process()">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 text-blue-500 mr-2">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                                     </svg>
@@ -321,13 +321,13 @@
                         <div class=" flex justify-between">
                             <p class="font-semibold text-lg">Baki Perlu Kutip</p>
                             <div class="border px-6">
-                                <p class="font-semibold text-xl">{{ number_format($invoice_process->sum('total_paid_amount'), 2) }}</p>
+                                <p class="text-right font-semibold text-xl">{{ number_format($invoice_process->sum('total_paid_amount'), 2) }}</p>
                             </div>
                         </div>
                         <div class="flex justify-between pt-3">
                             <p class="font-semibold text-lg">Baki Dipulangkan</p>
                             <div class="border px-6">
-                                <p class="font-semibold text-xl">{{ number_format($balance_amount, 2) }}</p>
+                                <p class="text-right font-semibold text-xl">{{ number_format($balance_amount, 2) }}</p>
                             </div>
                         </div>
                         <div class="flex justify-end">

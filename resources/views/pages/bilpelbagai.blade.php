@@ -192,7 +192,7 @@
                             <p class="font-semibold text-sm">Tarikh Resit:</p>
                             <p class="text-sm"></p>
 
-                            <p class="font-semibold text-sm">No.Resit:</p>
+                            <p class="font-semibold text-sm">No. Resit:</p>
                             <p class="text-sm">-</p>
 
                             <p class="font-semibold text-sm">Penyedia Bil</p>

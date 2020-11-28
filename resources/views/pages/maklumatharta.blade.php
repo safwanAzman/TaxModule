@@ -61,7 +61,7 @@
                                <div class="flex flex-col-reverse col-span-12 lg:col-span-12 xxl:col-span-12 lg:block">
                                    <div class=" grid gap-2 lg:grid-cols-2 sm:grid-cols-2">
                                         <x-form.input label="No.Akaun" value="T0200703" livewire=""/>
-                                        <x-form.input label="No.Rujukan" value="MPK/PEN/00001" livewire=""/>
+                                        <x-form.input label="No. Rujukan" value="MPK/PEN/00001" livewire=""/>
                                         <x-form.input label="Pemilik" value="810921146261 -SUHAZLIN BINTI HARIS (Individu)" livewire=""/>
                                         <x-form.input label="Nama Di Bil" value="SUHAZLIN BINTI HARIS" livewire=""/>
                                    </div>
@@ -278,7 +278,7 @@
                                                 </td>
                                                 <td class="border px-4 py-2 text-base font-semibold">
                                                     <p>UDATE ck_harta</p>
-                                                    <p>No.Ruj. <span class="text-blue-500">HM0002</span></p>
+                                                    <p>No. Ruj. <span class="text-blue-500">HM0002</span></p>
                                                     <p>Nota <span class="text-blue-500">Pembetulan Maklumat</span></p>
                                                     <p>Ukuran <span class="text-blue-500">LT0002 kaki persegi</span></p>
                                                     <p>Luasan Tanah <span class="text-blue-500">1000</span></p>

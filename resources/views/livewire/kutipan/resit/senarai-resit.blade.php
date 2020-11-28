@@ -15,11 +15,11 @@
         <div class="flex flex-col-reverse col-span-12 lg:col-span-12 xxl:col-span-12 lg:block">
             <div class="flex justify-between">
                 <div class="flex items-center">
-                    <span class=" ml-3 mr-2 -mt-4 text-base text-gray-500">Tempoh</span>
+                    <span class=" ml-3 mr-2 -mt-4 text-base text-gray-500">Period</span>
                     <x-form.dropdown label="" value="" default="yes" value="search_date">
-                        <option class="" value="0">Hari ini</option>
-                        <option class="" value="1">Semalam</option>
-                        <option class="" value="7">7 Hari</option>
+                        <option class="" value="0">Today</option>
+                        <option class="" value="1">Yesterday</option>
+                        <option class="" value="7">7 Days</option>
                     </x-form.dropdown>
                     {{-- <x-form.input type="date" label="" value="" livewire="wire:model=search_date" /> --}}
 
@@ -130,8 +130,7 @@
                         </x-general.table-body>
                         <x-general.table-body colspan="" class="text-sm text-center text-gray-500 uppercase">
                             <div class="flex justify-center">
-                                @dump($detail->invoice->business_type)
-                                <a class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-2 rounded-full flex cursor-pointer" href="{{ $detail->invoice->business_type == 'Lesen' ? route('taxInvoice',['id' => $detail->invoice->id]) : route('resitPDF',['id' => $detail->invoice->id]) }}">
+                                <a class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-2 rounded-full flex cursor-pointer" target="blank" href="{{ $detail->invoice->business_type == 'Lesen' ? route('taxInvoice',['id' => $detail->invoice->id]) : route('resitPDF',['id' => $detail->invoice->id]) }}">
                                     <svg xmlns="" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 text-white text-center">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
