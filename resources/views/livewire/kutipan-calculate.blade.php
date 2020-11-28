@@ -2,7 +2,7 @@
      <!-- CTA -->
     <div class="flex items-center justify-between p-4 mb-2 text-sm font-semibold text-purple-100 bg-blue-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple">
       <div class="flex items-center">
-        <span>Kutipan</span>
+        <span>Teller</span>
       </div>
        <a  href="{{route('Kutipan.index')}}" class="flex">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 text-white mr-2 mt-1">

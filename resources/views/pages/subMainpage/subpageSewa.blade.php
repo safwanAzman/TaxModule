@@ -4,7 +4,7 @@
 <div class="py-20 flex items-center justify-center">
     <div class="grid grid-cols-12 gap-1">
         <div class="flex flex-col-reverse col-span-12 lg:col-span-12 xxl:col-span-12 lg:block">
-            <div class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100 bg-blue-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
+            <div class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100  bg-gray-800 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
               href="#" onclick="test()">
               <div class="flex items-center">
                 <span>Sewa</span>

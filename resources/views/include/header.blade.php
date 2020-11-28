@@ -1236,7 +1236,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 
                       </svg>
-                    <a class="w-full ml-2" href="{{route('SenaraiKutipan.index')}}">Senarai Kutipan</a>
+                    <a class="w-full ml-2" href="{{route('SenaraiKutipan.index')}}">Teller</a>
                     </div>
                   </li> 
                   
@@ -1289,7 +1289,7 @@
           {{-- end Kutipan --}}
 
           {{-- start Pemborong --}}
-          <ul class="">
+          {{-- <ul class="">
             <li class="relative px-6 py-3" x-data="{ open10: false }" >
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-100 dark:hover:text-gray-200"
@@ -1325,7 +1325,7 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-900 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                  {{-- <li
+                  <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-white"
                   >
                     <div class="flex">
@@ -1344,16 +1344,16 @@
                       </svg>
                       <a class="w-full ml-2" href="#">Senarai Harta</a>
                     </div>
-                  </li>     --}}
+                  </li>    
                 </ul>
                 
               </div>
             </li>
-          </ul>
+          </ul> --}}
           {{-- end Pemborong --}}
 
           {{-- start Belanjawan --}}
-          <ul class="">
+          {{-- <ul class="">
             <li class="relative px-6 py-3" x-data="{ open11: false }" >
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-100 dark:hover:text-gray-200"
@@ -1389,7 +1389,7 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-900 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                  {{-- <li
+                  <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-white"
                   >
                     <div class="flex">
@@ -1408,17 +1408,17 @@
                       </svg>
                       <a class="w-full ml-2" href="#">Senarai Harta</a>
                     </div>
-                  </li>     --}}
+                  </li>    
                 </ul>
                 
               </div>
             </li>
-          </ul>
+          </ul> --}}
           {{-- end Belanjawan --}}
 
 
           {{-- start Perolehan--}}
-          <ul class="">
+          {{-- <ul class="">
             <li class="relative px-6 py-3" x-data="{ open12: false }" >
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-100 dark:hover:text-gray-200"
@@ -1454,7 +1454,7 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-900 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                  {{-- <li
+                  <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-white"
                   >
                     <div class="flex">
@@ -1473,16 +1473,16 @@
                       </svg>
                       <a class="w-full ml-2" href="#">Senarai Harta</a>
                     </div>
-                  </li>     --}}
+                  </li>    
                 </ul>
                 
               </div>
             </li>
-          </ul>
+          </ul> --}}
           {{-- end Perolehan --}}
 
-          {{-- start Pembayaran--}}
-          <ul class="">
+          {{-- start Laporan--}}
+          {{-- <ul class="">
             <li class="relative px-6 py-3" x-data="{ open13: false }" >
               <button
                 class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-100 dark:hover:text-gray-200"
@@ -1503,7 +1503,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 
                   </svg>
-                  <span class="ml-4">Pembayaran</span>
+                  <span class="ml-4">Laporan</span>
                 </span>
                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="ml-1 transform inline-block fill-current text-gray-500 w-6 h-6 rotate-90" :class="{'rotate-360': open13}"><path fill-rule="evenodd" d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z"/></svg>
               </button>
@@ -1518,7 +1518,7 @@
                   class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-900 dark:text-gray-400 dark:bg-gray-900"
                   aria-label="submenu"
                 >
-                  {{-- <li
+                  <li
                     class="px-2 py-1 transition-colors duration-150 hover:text-white"
                   >
                     <div class="flex">
@@ -1537,13 +1537,13 @@
                       </svg>
                       <a class="w-full ml-2" href="#">Senarai Harta</a>
                     </div>
-                  </li>     --}}
+                  </li>    
                 </ul>
                 
               </div>
             </li>
-          </ul>
-          {{-- end Pembayaran--}}
+          </ul> --}}
+          {{-- end Laporan--}}
 
 
           {{-- start Lejar Am--}}
