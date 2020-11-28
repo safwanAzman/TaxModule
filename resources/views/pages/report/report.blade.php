@@ -6,6 +6,12 @@
       <div class="flex items-center">
         <span>Report</span>
       </div>
+      <a  href="{{route('Kutipan.index')}}" class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 text-white mr-2 mt-1">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            <span>Kembali</span>
+        </a>
     </div>
     <div class="bg-white sm:rounded-lg shadow px-5 py-3">
 

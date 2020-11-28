@@ -2,12 +2,17 @@
 @section('content')
 <div class="bg-white sm:rounded-lg shadow px-3 py-3 mt-3">
     <!-- CTA -->
-    <a class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100 bg-blue-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
-      href="#" onclick="test()">
+    <div class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100 bg-blue-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple">
       <div class="flex items-center">
         <span>Senarai Akaun</span>
       </div>
-    </a>
+      <a  href="{{route('Sewa.index')}}" class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 text-white mr-2 mt-1">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            <span>Kembali</span>
+        </a>
+    </div>
  <div class="grid grid-cols-12 gap-6">
     <div class="flex flex-col-reverse col-span-12 lg:col-span-8 xxl:col-span-8 lg:block">
         <div class="">
