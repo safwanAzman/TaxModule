@@ -66,7 +66,7 @@ Route::resource('Emandatelist','\App\Http\Controllers\EmandatelistController');
 Route::resource('SenaraiHartaCukai','\App\Http\Controllers\SenaraiHartaCukai');
 Route::resource('SenaraiHartaBaru','\App\Http\Controllers\SenaraiHartaBaruController');
 Route::resource('ProsesBilCukai','\App\Http\Controllers\ProsesBilCukaiController');
-Route::get('DownloadResit','\App\Http\Controllers\ProsesBilCukaiController@downloadBilCukai');
+Route::get('CetakBilCukai','\App\Http\Controllers\ProsesBilCukaiController@cetakBilCukai');
 Route::resource('TempahGelanggang','\App\Http\Controllers\TempahGelanggangController');
 Route::resource('SenaraiTempahan','\App\Http\Controllers\SenaraiTempahanController');
 Route::resource('SenaraiAkaun','\App\Http\Controllers\SenaraiAccountController');

@@ -173,7 +173,7 @@
                    <img class="hidden h-14 w-14 rounded-full sm:block object-cover mr-2 border-4 border-gray-100" src="https://image.flaticon.com/icons/png/512/149/149071.png" alt="">
                 </div>
                 <div class="pt-1">
-                    <p class="font-bold text-base font-bold text-gray-400"> ADMIN</p>
+                    <p class="font-bold text-base  text-gray-400"> ADMIN</p>
                     <p class="text-sm text-gray-400 pt-2"><span style="height: 10px; width: 10px; background-color:#5fff14; border-radius: 50%; display: inline-block;"></span> Online</p>
                 </div>
             </div>

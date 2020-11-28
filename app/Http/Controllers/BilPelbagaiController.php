@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use PDF;
 class BilPelbagaiController extends Controller
 {
     /**
@@ -18,7 +18,9 @@ class BilPelbagaiController extends Controller
 
     public function downloadBil()
     {
-        return response()->download(public_path('/img/bil-pelbagai.pdf'));
+        $pdf = PDF::loadView('pages.cetakBilPelbagaiPDF')->setPaper('A4','portrait');
+        
+        return $pdf->stream();
     }
 
     /**
