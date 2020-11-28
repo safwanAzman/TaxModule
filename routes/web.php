@@ -62,6 +62,17 @@ Route::get('/dashboard', function () {
     return view('pages.mainpage');
 })->name('mainpage');
 
+//subMainPage
+Route::resource('Penilaian','\App\Http\Controllers\subMainpage\PenilaianController');
+Route::resource('Cukai-Taksiran','\App\Http\Controllers\subMainpage\CukaiTaksiranController');
+Route::resource('Remisi','\App\Http\Controllers\subMainpage\RemisiController');
+Route::resource('Lesen','\App\Http\Controllers\subMainpage\LesenController');
+Route::resource('Sewa','\App\Http\Controllers\subMainpage\SewaController');
+Route::resource('Tempahan','\App\Http\Controllers\subMainpage\TempahController');
+Route::resource('BilPelbagai','\App\Http\Controllers\subMainpage\BilPelbagaiController');
+Route::resource('Kutipan','\App\Http\Controllers\subMainpage\KutipanController');
+//End subMainPage
+
 Route::resource('Emandatelist','\App\Http\Controllers\EmandatelistController');
 Route::resource('SenaraiHartaCukai','\App\Http\Controllers\SenaraiHartaCukai');
 Route::resource('SenaraiHartaBaru','\App\Http\Controllers\SenaraiHartaBaruController');

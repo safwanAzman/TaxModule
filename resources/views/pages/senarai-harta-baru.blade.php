@@ -80,13 +80,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">AZURA BINTI JAAFAR.</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 1KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00001</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -118,13 +118,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">KASWADI BIN MOHD KASSIM</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 2KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00002</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -162,7 +162,7 @@
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00003</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -194,13 +194,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">NORREHA BINTI ISMAIL</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 4KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00004</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -232,13 +232,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">SANI A/L BAH DEGIL</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 5KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00005</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -270,13 +270,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">AINOR BINTI DRIS</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 6KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00006</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -308,13 +308,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">NAFAZILA BIN MAD SAHAR</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 7KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00007</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -346,13 +346,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">BONG SIN KIONG</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 8KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00008</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -384,13 +384,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">NOR RIZAM  BINTI YUSOF</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 9KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/00009</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -422,13 +422,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">AB. SOFI BIN MUSTAPA</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 10KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/000010</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -460,13 +460,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">ROSNAH BINTI PUTEH</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 11KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/000011</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -498,13 +498,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">SHAM FAIZAL JAAFAR</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 12KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/000012</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -536,13 +536,13 @@
                             </div>
                         </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
-                                <p class="text-base text-green-600 font-semibold uppercase">...</p>
+                                <p class="text-base text-green-600 font-semibold uppercase">SULAIMAN  JASEH</p>
                                 <p class="font-semibold">Alamat Harta: <span class="text-base text-blue-600 font-semibold">NO 13KG.PASIR EMAS</span></p>
                                 
                             </td>
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
                                 <p class="font-semibold">No Rujukan: <span class="text-base text-green-600 font-semibold">MPK/PEN/000013</span></p>
-                                <p class="font-semibold">Dikemaskini Oleh:</p>
+                                <p class="font-semibold">Dikemaskini Oleh: Admin</p>
                             </td>
 
                             <td class="px-4 py-3 text-sm" style=" border: 1px solid #ddd;">
@@ -599,12 +599,13 @@
         <div class="bg-white shadow-lg mt-4">
           <div class="p-4">
             <div class="flex">
-                <a href="#" class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex cursor-pointer" style="width: 180px;">
+                {{-- <a href="#" class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex cursor-pointer" style="width: 180px;">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-white mr-2">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
                     </svg>
                     <span class="text-white text-sm flex items-center">Tambah Harta</span>
-                </a>
+                </a> --}}
+                @include("pages.tambahhartamodal")
                 <a href="#" class="bg-blue-500 hover:bg-grey text-blue-500-darkest font-bold py-2 px-4 rounded flex cursor-pointer ml-2" style="width: 180px;">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-white mr-2">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
