@@ -31,13 +31,14 @@ class KutipanCalculate extends Component
         }
 
         $this->invoice_process   = Invoice::where('status', 1)-> get();
-        $this->balance_amount    = $this->confirm_paid_amount - $this->invoice_process->sum('total_paid_amount');
+        $this->balance_amount    = $this->confirm_paid_amount - round($this->invoice_process->sum('total_paid_amount'), 2);
+        
     
         return view('livewire.kutipan-calculate',[
             'invoice_search'    => Invoice::where('status', 0)
                                 -> where('bil_no', 'like',  $rsearch)
                                 -> get(),
-            'receipts'          => Receipt::whereRAW('DATEDIFF(DAY, created_at, GETDATE()) = 0'),
+            'receipts'          => Receipt::whereRAW('DATEDIFF(D, created_at, GETDATE()) = 0')->get(),
         ]);
     }
 
@@ -66,7 +67,7 @@ class KutipanCalculate extends Component
     public function setPaymentMode($payment_mode){
         $this->payment_mode         = $payment_mode;
         if ($payment_mode == 'KAD KREDIT'){
-            $this->confirm_paid_amount  = $this->invoice_process->sum('total_paid_amount');
+            $this->confirm_paid_amount  = round($this->invoice_process->sum('total_paid_amount'), 2);
         }else{
             $this->confirm_paid_amount  = 0.00;
         }

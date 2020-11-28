@@ -317,6 +317,7 @@
                                 </button>
 
                             </div>
+                            
                         </div>
                     </div>
                     <div class="bg-gray-100 p-4">
@@ -343,13 +344,13 @@
 
         {{-- Start Bil Footer --}}
         <div class="col-span-12 lg:col-span-12 xxl:col-span-12">
-            <div class="mt-10 flex items-center justify-between p-2 text-sm font-semibold text-purple-100 bg-black rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple">      
+            <div class="mt-10 flex items-center justify-between p-2 text-sm font-semibold text-purple-100 bg-black rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple">
                 <p class="text-center">No Resit <br> <span class="text-center">{{ number_format($receipts->count()) }}</span></p>
                 <p class="text-center">Tunai <br> <span class="text-center">{{ number_format($receipts->where('payment_mod', 'TUNAI')->sum('total_amount'), 2) }}</span></p>
                 <p class="text-center">Cek <br> <span class="text-center">{{ number_format($receipts->where('payment_mod', 'CEK')->sum('total_amount'), 2) }}</span></p>
                 <p class="text-center">MO/PO <br> <span class="text-center">{{ number_format($receipts->where('payment_mod', 'MO/PO')->sum('total_amount'), 2) }}</span></p>
                 <p class="text-center">Kad Kredit <br> <span class="text-center">{{ number_format($receipts->where('payment_mod', 'KAD KREDIT')->sum('total_amount'), 2) }}</span></p>
-                <p class="text-center">Jumlah <br> <span class="text-center">{{ number_format($receipts->sum('total_amount'), 2) }}</span></p>
+                <p class="text-center">Jumlah <br> <span class="text-center">{{ number_format($receipts->sum('total_amount'), 2) }}</span></p> 
             </div>
         </div>
         {{-- End Bil Footer --}}
