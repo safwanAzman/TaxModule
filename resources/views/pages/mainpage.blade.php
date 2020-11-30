@@ -132,6 +132,16 @@
                     </div>
                   </a>
 
+                   <!--Belanjawan-->
+                  <a href="#" class="h-32 w-32 relative cursor-pointer mb-5 tooltip">
+                    <div class="absolute inset-0 transform  hover:scale-125 transition duration-300">
+                      <div class="h-full w-full">
+                        <span class="tooltip-text  text-black text-xs font-semibold">In Progress</span>
+                        <img class="h-32 w-32" src="{{ asset('img/icon/Belanjawan.png') }}">
+                      </div>
+                    </div>
+                  </a>
+
 
             </div>
         </div>
