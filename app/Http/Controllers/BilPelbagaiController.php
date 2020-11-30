@@ -16,7 +16,7 @@ class BilPelbagaiController extends Controller
         return view('pages.bilpelbagai');
     }
 
-    public function downloadBil()
+    public function cetakBil()
     {
         $pdf = PDF::loadView('pages.cetakBilPelbagaiPDF')->setPaper('A4','portrait');
         
