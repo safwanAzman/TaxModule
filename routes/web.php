@@ -77,14 +77,14 @@ Route::resource('Emandatelist','\App\Http\Controllers\EmandatelistController');
 Route::resource('SenaraiHartaCukai','\App\Http\Controllers\SenaraiHartaCukai');
 Route::resource('SenaraiHartaBaru','\App\Http\Controllers\SenaraiHartaBaruController');
 Route::resource('ProsesBilCukai','\App\Http\Controllers\ProsesBilCukaiController');
-Route::get('CetakBilCukai','\App\Http\Controllers\ProsesBilCukaiController@cetakBilCukai');
+Route::get('cetakBilCukai','\App\Http\Controllers\ProsesBilCukaiController@cetakBilCukai')->name('cetakBilCukai');
 Route::resource('TempahGelanggang','\App\Http\Controllers\TempahGelanggangController');
 Route::resource('SenaraiTempahan','\App\Http\Controllers\SenaraiTempahanController');
 Route::resource('SenaraiAkaun','\App\Http\Controllers\SenaraiAccountController');
 Route::resource('MaklumatAkaunSewa','\App\Http\Controllers\MaklumatAkaunController');
 Route::resource('SenaraiKutipan','\App\Http\Controllers\kutipan\SenaraiKutipanController');
 Route::resource('Bilpelbagai','\App\Http\Controllers\BilPelbagaiController');
-Route::get('DownloadResitBil','\App\Http\Controllers\BilPelbagaiController@downloadBil');
+Route::get('cetakBil','\App\Http\Controllers\BilPelbagaiController@cetakBil')->name('cetakBil');;
 
 Route::resource('CukaiTaksiranTest','\App\Http\Controllers\cukai\CukaiTaksiranController');
 Route::get('CukaiTaksiranPDF','\App\Http\Controllers\cukai\CukaiTaksiranController@cukaiTaksiranPDF');
