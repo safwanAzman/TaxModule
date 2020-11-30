@@ -7,7 +7,7 @@
             <div class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100  bg-gray-800 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
               href="#" onclick="test()">
               <div class="flex items-center">
-                <span>Teller</span>
+                <span>Kutipan</span>
               </div>
             </div>
             <div class="grid gap-10 lg:grid-cols-6 sm:grid-cols-6">
