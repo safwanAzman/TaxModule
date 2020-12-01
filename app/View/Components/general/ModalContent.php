@@ -6,10 +6,13 @@ use Illuminate\View\Component;
 
 class ModalContent extends Component
 {
-     public $title;
-    public function __construct($title)
+    public $title;
+    public $modalActive;
+    
+    public function __construct($title,$modalActive)
     {
        $this->title = $title;
+       $this->modalActive = $modalActive;
     }
 
     
